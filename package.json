@@ -1,0 +1,43 @@
+{
+  "name": "minoru",
+  "version": "0.1.0",
+  "description": "A React UI component library with a minimal design.",
+  "author": "Joeylene Rivera",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "cd example && npm start",
+    "dev": "tsc -p tsconfig.json  --watch",
+    "build": "rm -rf dist && tsc -p tsconfig.json"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "module": "dist/minoru.esm.js",
+  "devDependencies": {
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "tslib": "^2.1.0",
+    "typescript": "^4.1.5"
+  },
+  "dependencies": {
+    "@stitches/core": "0.1.0-canary.12",
+    "@stitches/react": "0.1.0-canary.12"
+  }
+}
