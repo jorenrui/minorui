@@ -1,5 +1,5 @@
 export const FONT_SIZES = {
-  pxbase: '10px',
+  pxbase: '16px',
   xs: '0.75rem',
   sm: '0.875rem',
   base: '1rem',
