@@ -9,4 +9,8 @@ export {
 } from './stitches';
 
 // * Components
-export { card, Card } from './components/Card';
+// ** Typography
+export { Text, ITextVariants } from './Text';
+export { Heading, IHeadingVariants } from './Heading';
+// ** Surfaces
+export { Card, ICardVariants } from './Card';
