@@ -1,6 +1,7 @@
 import { styled } from '../../../dist';
 
-export const Page = styled('div', {
+export const Container = styled('div', {
   maxWidth: '75vw',
+  minWidth: '$5/6',
   margin: '$10 auto',
 });
