@@ -25,22 +25,22 @@ export const StyledSkeleton = styled('span', {
       },
       block: {
         display: 'block',
-        margin: '$3',
+        margin: '$30',
       },
     },
     type: {
       heading: {
-        height: '$6',
+        height: '$150',
       },
       text: {
-        height: '$4',
+        height: '$100',
       },
       caption: {
-        height: '$3',
+        height: '$50',
       },
       avatar: {
-        height: '$8',
-        width: '$8',
+        height: '$300',
+        width: '$300',
         borderRadius: '$full',
       },
     },

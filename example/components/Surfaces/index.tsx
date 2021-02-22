@@ -4,7 +4,7 @@ import { Card, styled, Text, Heading } from '../../../.';
 const Grid = styled('div', {
   display: 'grid',
   gridTemplateColumns: '1fr 1fr 1fr',
-  gap: '$5',
+  gap: '$150',
 });
 
 export function Surfaces() {
