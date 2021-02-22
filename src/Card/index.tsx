@@ -1,4 +1,5 @@
-import { CSS, css, styled } from '../../stitches';
+import { StitchesVariants } from '@stitches/core';
+import { CSS, css, styled } from '../stitches';
 
 const CARD_STYLES: CSS = {
   boxSizing: 'border-box',
@@ -17,3 +18,5 @@ const CARD_STYLES: CSS = {
 
 export const card = css(CARD_STYLES);
 export const Card = styled('div', CARD_STYLES);
+
+export type ICardVariants = StitchesVariants<typeof Card>;
