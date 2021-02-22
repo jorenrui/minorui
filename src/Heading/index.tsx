@@ -63,7 +63,7 @@ export const Heading = styled('h1', {
     },
   },
   defaultVariants: {
-    size: 'base',
+    size: 'xl',
   },
 });
 
