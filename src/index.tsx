@@ -6,7 +6,7 @@ export {
   theme,
   keyframes,
   getCssString,
-} from './stitches';
+} from './lib/stitches';
 
 // * Components
 // ** Typography
@@ -14,3 +14,6 @@ export { Text, ITextVariants } from './Text';
 export { Heading, IHeadingVariants } from './Heading';
 // ** Surfaces
 export { Card, ICardVariants } from './Card';
+// ** Progress
+export { Skeleton } from './Skeleton';
+export { ISkeletonVariants } from './Skeleton/component';
