@@ -1,5 +1,5 @@
 import { StitchesVariants } from '@stitches/core';
-import { CSS, css, styled } from '../stitches';
+import { CSS, css, styled } from '../lib/stitches';
 
 const CARD_STYLES: CSS = {
   boxSizing: 'border-box',

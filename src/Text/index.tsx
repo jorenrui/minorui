@@ -1,5 +1,5 @@
 import { StitchesVariants } from '@stitches/core';
-import { styled } from '../stitches';
+import { styled } from '../lib/stitches';
 
 export const Text = styled('p', {
   fontWeight: 400,
