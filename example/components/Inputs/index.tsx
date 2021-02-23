@@ -1,6 +1,13 @@
 import * as React from 'react';
 
-import { Box, Button, Heading, styled, Input } from '../../../dist';
+import {
+  Box,
+  Button,
+  Heading,
+  styled,
+  Input,
+  Label,
+} from '../../../dist';
 
 const Block = styled('span', {
   padding: '$150',
@@ -229,8 +236,11 @@ export function Inputs() {
       <Heading as="h3" size="4xl">
         Input Field
       </Heading>
-      <Block>
-        <Input type="text" />
+      <Block as="div">
+        <Label as="label" htmlFor="name">
+          Name
+        </Label>
+        <Input id="name" type="text" />
       </Block>
     </Box>
   );
