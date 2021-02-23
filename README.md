@@ -1,5 +1,8 @@
 # Minoru UI (A work in progress)
 
+[![0.1.0 NPM Version](https://img.shields.io/badge/npm-v0.2.3-orange)](http://npmjs.com/package/minoru)
+[![MIT License Status](https://img.shields.io/badge/license-MIT-blue)](https://github.com/jorenrui/minoru/blob/main/LICENSE)
+
 A React UI component library with a minimal design. The official design system for [Sutle](https://sutle.io).
 
 ## Installation
