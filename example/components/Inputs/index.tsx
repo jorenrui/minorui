@@ -114,6 +114,117 @@ export function Inputs() {
           </Button>
         </Block>
       </Block>
+      <Heading as="h4" size="3xl">
+        Colors
+      </Heading>
+      <Block>
+        <Block>
+          <Button color="primary">
+            Primary
+          </Button>
+        </Block>
+        <Block>
+          <Button color="accent">
+            Accent
+          </Button>
+        </Block>
+        <Block>
+          <Button color="info">
+            Info
+          </Button>
+        </Block>
+        <Block>
+          <Button color="positive">
+            Positive
+          </Button>
+        </Block>
+        <Block>
+          <Button color="negative">
+            Negative
+          </Button>
+        </Block>
+      </Block>
+      <Block css={{ display: 'block' }}>
+        <Block>
+          <Button color="primary" kind="secondary">
+            Primary
+          </Button>
+        </Block>
+        <Block>
+          <Button color="accent"  kind="secondary">
+            Accent
+          </Button>
+        </Block>
+        <Block>
+          <Button color="info"  kind="secondary">
+            Info
+          </Button>
+        </Block>
+        <Block>
+          <Button color="positive"  kind="secondary">
+            Positive
+          </Button>
+        </Block>
+        <Block>
+          <Button color="negative"  kind="secondary">
+            Negative
+          </Button>
+        </Block>
+      </Block>
+      <Block css={{ display: 'block' }}>
+        <Block>
+          <Button color="primary" kind="tertiary">
+            Primary
+          </Button>
+        </Block>
+        <Block>
+          <Button color="accent"  kind="tertiary">
+            Accent
+          </Button>
+        </Block>
+        <Block>
+          <Button color="info"  kind="tertiary">
+            Info
+          </Button>
+        </Block>
+        <Block>
+          <Button color="positive"  kind="tertiary">
+            Positive
+          </Button>
+        </Block>
+        <Block>
+          <Button color="negative"  kind="tertiary">
+            Negative
+          </Button>
+        </Block>
+      </Block>
+      <Block css={{ display: 'block' }}>
+        <Block>
+          <Button color="primary" kind="ghost">
+            Primary
+          </Button>
+        </Block>
+        <Block>
+          <Button color="accent"  kind="ghost">
+            Accent
+          </Button>
+        </Block>
+        <Block>
+          <Button color="info"  kind="ghost">
+            Info
+          </Button>
+        </Block>
+        <Block>
+          <Button color="positive"  kind="ghost">
+            Positive
+          </Button>
+        </Block>
+        <Block>
+          <Button color="negative"  kind="ghost">
+            Negative
+          </Button>
+        </Block>
+      </Block>
     </div>
   );
 }
