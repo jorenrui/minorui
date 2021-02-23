@@ -1,21 +1,20 @@
-# Minoru
+# Minoru UI (A work in progress)
 
 A React UI component library with a minimal design. The official design system for [Sutle](https://sutle.io).
 
-## Usage
+## Installation
 
-You can apply the styles using the class name:
-```jsx
-import { heading } from 'minoru';
+Install `Minoru UI` using [yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/):
 
-...
+```bash
+# Using NPM
+npm install --save minoru
 
-<h1 className={heading()}>
-  Hello World
-</h1>
+# Using Yarn
+yarn add minoru
 ```
 
-Or use the styled component:
+## Usage
 
 ```jsx
 import { Heading } from 'minoru';
@@ -40,3 +39,11 @@ I don't really want to reinvent the wheel when it comes to accessibility so I us
 ### [Stitches](stitches.dev/)
 
 A styling library that I am really a fan of. I really love how you can add variants to the styled components. You must check this out 👀
+
+## Changelog
+
+[Changelog](https://github.com/jorenrui/cionru/blob/main/CHANGELOG.md)
+
+## License
+
+MIT © [Joeylene Rivera](https://github.com/jorenrui)
