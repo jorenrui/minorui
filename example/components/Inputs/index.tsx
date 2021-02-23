@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Box, Button, Heading, styled } from '../../../dist';
+import { Box, Button, Heading, styled, Input } from '../../../dist';
 
 const Block = styled('span', {
   padding: '$150',
@@ -225,6 +225,12 @@ export function Inputs() {
             Negative
           </Button>
         </Block>
+      </Block>
+      <Heading as="h3" size="4xl">
+        Input Field
+      </Heading>
+      <Block>
+        <Input type="text" />
       </Block>
     </Box>
   );

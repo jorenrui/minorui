@@ -16,6 +16,7 @@ export { Box } from './Box';
 export { Spinner, ISpinnerVariants } from './Spinner';
 export { Button } from './Button';
 export { IButtonVariants } from './Button/component';
+export { Input, IInputVariants } from './Input';
 
 // ** Typography
 export { Text, ITextVariants } from './Text';
