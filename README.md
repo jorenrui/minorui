@@ -42,7 +42,7 @@ A styling library that I am really a fan of. I really love how you can add varia
 
 ## Changelog
 
-[Changelog](https://github.com/jorenrui/cionru/blob/main/CHANGELOG.md)
+[Changelog](https://github.com/jorenrui/minoru/blob/main/CHANGELOG.md)
 
 ## License
 
