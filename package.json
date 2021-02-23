@@ -14,7 +14,7 @@
     "node": ">=10"
   },
   "scripts": {
-    "start": "cd example && npm start",
+    "start": "npm run build && cd example && npm start",
     "dev": "tsc -p tsconfig.json  --watch",
     "build": "rm -rf dist && tsc -p tsconfig.json"
   },
