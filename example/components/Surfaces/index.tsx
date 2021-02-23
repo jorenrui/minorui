@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Card, styled, Text, Heading } from '../../../.';
+import { Card, styled, Text, Heading, Box } from '../../../.';
 
 const Grid = styled('div', {
   display: 'grid',
@@ -9,7 +9,7 @@ const Grid = styled('div', {
 
 export function Surfaces() {
   return (
-    <>
+    <Box>
       <Heading as="h2" size="5xl">
         Surfaces
       </Heading>
@@ -30,6 +30,6 @@ export function Surfaces() {
           <Text>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus eaque ad magnam mollitia ipsa, cumque recusandae explicabo suscipit quis, iure, dolore dignissimos aut ab voluptatibus eum in odio harum earum.</Text>
         </Card>
       </Grid>
-    </>
+    </Box>
   );
 }

@@ -1,13 +1,14 @@
 import * as React from 'react';
 
-import { Button, Heading, styled } from '../../../dist';
+import { Box, Button, Heading, styled } from '../../../dist';
+
 const Block = styled('span', {
   padding: '$150',
 })
 
 export function Inputs() {
   return (
-    <div>
+    <Box>
       <Heading as="h2" size="5xl">
         Inputs
       </Heading>
@@ -225,6 +226,6 @@ export function Inputs() {
           </Button>
         </Block>
       </Block>
-    </div>
+    </Box>
   );
 }

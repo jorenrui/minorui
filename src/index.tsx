@@ -9,6 +9,9 @@ export {
 } from './lib/stitches';
 
 // * Components
+// ** Layout
+export { Box } from './Box';
+
 // ** Inputs
 export { Spinner, ISpinnerVariants } from './Spinner';
 export { Button } from './Button';
