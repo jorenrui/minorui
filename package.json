@@ -1,7 +1,7 @@
 {
   "name": "minoru",
   "version": "0.1.0",
-  "description": "A React UI component library with a minimal design.",
+  "description": "A React UI component library with a minimal design. The official design system for Sutle.",
   "author": "Joeylene Rivera",
   "license": "MIT",
   "main": "dist/index.js",
