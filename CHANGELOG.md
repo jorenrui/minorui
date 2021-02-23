@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [[0.1.1]](https://github.com/jorenrui/minorui/releases/tag/v0.1.1) - 2021-02-23
 
-### Minorui UI (A work in progress)
+### Minorui (A work in progress)
 
 A React UI component library with a minimal design. The official design system for [Sutle](https://sutle.io).
 
@@ -14,7 +14,7 @@ Components are created using [Radix](https://radix-ui.com), styled using [Stitch
 
 #### Installation
 
-Install `Minorui UI` using [yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/):
+Install `Minorui` using [yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/):
 
 ```bash
 # Using NPM
@@ -38,6 +38,6 @@ import { Heading } from 'minorui';
 
 ## [[0.1.0]](https://github.com/jorenrui/minorui/releases/tag/v0.1.0) - 2021-02-23
 
-### Minorui UI (A work in progress)
+### Minorui (A work in progress)
 
-A React UI component library with a minimal design. The official design system for [Sutle](https://sutle.io). Initial pre-release of Minorui UI.
+A React UI component library with a minimal design. The official design system for [Sutle](https://sutle.io). Initial pre-release of Minorui.

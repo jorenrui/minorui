@@ -1,4 +1,4 @@
-# Minorui UI (A work in progress)
+# Minorui (A work in progress)
 
 [![0.1.0 NPM Version](https://img.shields.io/badge/npm-v0.1.0-orange)](http://npmjs.com/package/minorui)
 [![MIT License Status](https://img.shields.io/badge/license-MIT-blue)](https://github.com/jorenrui/minorui/blob/main/LICENSE)
@@ -7,7 +7,7 @@ A React UI component library with a minimal design. The official design system f
 
 ## Installation
 
-Install `Minorui UI` using [yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/):
+Install `Minorui` using [yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/):
 
 ```bash
 # Using NPM
