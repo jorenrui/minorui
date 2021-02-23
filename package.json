@@ -1,22 +1,25 @@
 {
-  "name": "minoru",
-  "version": "0.1.0",
+  "name": "minorui",
+  "version": "0.1.1",
   "description": "A React UI component library with a minimal design. The official design system for Sutle.",
   "author": "Joeylene Rivera",
   "license": "MIT",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
-  "files": [
-    "dist",
-    "src"
-  ],
+  "repository": "jorenrui/minorui",
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "module": "minorui.esm.js",
   "engines": {
     "node": ">=10"
   },
   "scripts": {
-    "start": "npm run build && cd example && npm start",
+    "start": "cd example && npm start",
     "dev": "tsc -p tsconfig.json  --watch",
-    "build": "rm -rf dist && tsc -p tsconfig.json"
+    "build": "rm -rf dist && tsc -p tsconfig.json",
+    "prepare": "npm run build && npm run prepare:dist",
+    "prepare:dist": "cp -rf package.json README.md LICENSE CHANGELOG.md dist",
+    "prepublishOnly": "echo \"Error: Don't run 'npm publish' in root. Use 'npm run dist' instead.\" && exit 1",
+    "dist:beta": "cd dist && npm publish --ignore-scripts --tag beta",
+    "dist": "cd dist && npm publish --ignore-scripts"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -27,7 +30,6 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "module": "dist/minoru.esm.js",
   "devDependencies": {
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",

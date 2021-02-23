@@ -1,26 +1,26 @@
-# Minoru UI (A work in progress)
+# Minorui UI (A work in progress)
 
-[![0.1.0 NPM Version](https://img.shields.io/badge/npm-v0.1.0-orange)](http://npmjs.com/package/minoru)
-[![MIT License Status](https://img.shields.io/badge/license-MIT-blue)](https://github.com/jorenrui/minoru/blob/main/LICENSE)
+[![0.1.0 NPM Version](https://img.shields.io/badge/npm-v0.1.0-orange)](http://npmjs.com/package/minorui)
+[![MIT License Status](https://img.shields.io/badge/license-MIT-blue)](https://github.com/jorenrui/minorui/blob/main/LICENSE)
 
 A React UI component library with a minimal design. The official design system for [Sutle](https://sutle.io).
 
 ## Installation
 
-Install `Minoru UI` using [yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/):
+Install `Minorui UI` using [yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/):
 
 ```bash
 # Using NPM
-npm install --save minoru
+npm install --save minorui
 
 # Using Yarn
-yarn add minoru
+yarn add minorui
 ```
 
 ## Usage
 
 ```jsx
-import { Heading } from 'minoru';
+import { Heading } from 'minorui';
 
 ...
 
@@ -33,7 +33,7 @@ import { Heading } from 'minoru';
 
 ### [Tailwind CSS](https://tailwindcss.com/)
 
-I'm not really that great of a thinker when it comes to theme or creating a design system. That is why I decided to use some of Tailwind's styles to built my own custom components. Minoru uses the theming from Tailwind CSS (colors, font sizes, breakpoints, etc.).
+I'm not really that great of a thinker when it comes to theme or creating a design system. That is why I decided to use some of Tailwind's styles to built my own custom components. Minorui uses the theming from Tailwind CSS (colors, font sizes, breakpoints, etc.).
 
 ### [Radix](https://radix-ui.com/)
 
@@ -45,7 +45,7 @@ A styling library that I am really a fan of. I really love how you can add varia
 
 ## Changelog
 
-[Changelog](https://github.com/jorenrui/minoru/blob/main/CHANGELOG.md)
+[Changelog](https://github.com/jorenrui/minorui/blob/main/CHANGELOG.md)
 
 ## License
 
