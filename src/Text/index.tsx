@@ -4,7 +4,6 @@ import { styled } from '../lib/stitches';
 export const Text = styled('p', {
   fontWeight: 400,
   color: '$text',
-  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif',
 
   variants: {
     overflow: {
