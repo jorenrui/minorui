@@ -17,6 +17,7 @@ export { Spinner, ISpinnerVariants } from './Spinner';
 export { Button } from './Button';
 export { IButtonVariants } from './Button/component';
 export { Input, IInputVariants } from './Input';
+export { TextArea, ITextAreaVariants } from './TextArea';
 export { Label, ILabelVariants } from './Label';
 
 // ** Typography

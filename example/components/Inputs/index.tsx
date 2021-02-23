@@ -7,6 +7,7 @@ import {
   styled,
   Input,
   Label,
+  TextArea,
 } from '../../../dist';
 
 const Block = styled('span', {
@@ -241,6 +242,12 @@ export function Inputs() {
           Name
         </Label>
         <Input id="name" type="text" />
+      </Block>
+      <Block as="div">
+        <Label as="label" htmlFor="description">
+          Description
+        </Label>
+        <TextArea id="description" rows={3} />
       </Block>
     </Box>
   );
