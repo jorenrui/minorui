@@ -3,7 +3,6 @@ import { styled } from '../lib/stitches';
 
 export const Text = styled('p', {
   fontWeight: 400,
-  color: '$text',
 
   variants: {
     overflow: {
@@ -60,9 +59,36 @@ export const Text = styled('p', {
         fontType: '9xl',
       },
     },
+    color: {
+      primary: {
+        color: '$primary',
+      },
+      secondary: {
+        color: '$primary800',
+      },
+      tertiary: {
+        color: '$primary700',
+      },
+      accent: {
+        color: '$accent',
+      },
+      info: {
+        color: '$info',
+      },
+      warning: {
+        color: '$warning',
+      },
+      positive: {
+        color: '$positive',
+      },
+      negative: {
+        color: '$negative',
+      },
+    },
   },
   defaultVariants: {
     size: 'base',
+    color: 'primary',
   },
 });
 
