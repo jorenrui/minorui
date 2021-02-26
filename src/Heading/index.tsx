@@ -2,8 +2,8 @@ import { StitchesVariants } from '@stitches/core';
 import { styled } from '../lib/stitches';
 
 export const Heading = styled('h1', {
-  color: '$text',
-  fontWeight: 600,
+  fontWeight: 500,
+  letterSpacing: '-0.055em',
 
   variants: {
     overflow: {
@@ -60,9 +60,36 @@ export const Heading = styled('h1', {
         fontType: '9xl',
       },
     },
+    color: {
+      primary: {
+        color: '$primary',
+      },
+      secondary: {
+        color: '$primary800',
+      },
+      tertiary: {
+        color: '$primary700',
+      },
+      accent: {
+        color: '$accent',
+      },
+      info: {
+        color: '$info',
+      },
+      warning: {
+        color: '$warning',
+      },
+      positive: {
+        color: '$positive',
+      },
+      negative: {
+        color: '$negative',
+      },
+    },
   },
   defaultVariants: {
     size: 'xl',
+    color: 'primary',
   },
 });
 
