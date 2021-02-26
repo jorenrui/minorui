@@ -241,7 +241,25 @@ export function Inputs() {
         <Label as="label" htmlFor="name">
           Name
         </Label>
-        <Input id="name" type="text" />
+        <Input id="name" type="text" size="xs" />
+      </Block>
+      <Block as="div">
+        <Label as="label" htmlFor="name2">
+          Name
+        </Label>
+        <Input id="name2" type="text" size="sm" />
+      </Block>
+      <Block as="div">
+        <Label as="label" htmlFor="name3">
+          Name
+        </Label>
+        <Input id="name3" type="text" size="md" />
+      </Block>
+      <Block as="div">
+        <Label as="label" htmlFor="name4">
+          Name
+        </Label>
+        <Input id="name4" type="text" size="lg" variant="error" />
       </Block>
       <Block as="div">
         <Label as="label" htmlFor="description">
