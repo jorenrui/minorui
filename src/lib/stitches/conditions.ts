@@ -1,4 +1,5 @@
 export const CONDITIONS = {
+  xs: '@media screen and (max-width: 639px)',
   sm: '@media screen and (min-width: 640px) and (max-width: 767px)',
   md: '@media screen and (min-width: 768px) and (max-width: 1023px)',
   lg: '@media screen and (min-width: 1024px) and (max-width: 1279px)',
