@@ -58,5 +58,5 @@ export const Input = styled('input', {
   defaultVariants: {
     variant: 'default',
     size: 'md',
-  }
+  },
 });
