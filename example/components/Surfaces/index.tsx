@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Card, styled, Text, Heading, Box } from '../../../.';
+import { Card, styled, Text, Heading, Box } from '../../../dist';
 
 const Grid = styled('div', {
   display: 'grid',

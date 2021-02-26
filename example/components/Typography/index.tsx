@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Container } from '../Container';
-import { Text, styled, Heading } from '../../../.';
+import { Text, styled, Heading } from '../../../dist';
 
 const Grid = styled('div', {
   width: '$full',
