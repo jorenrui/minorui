@@ -22,15 +22,15 @@ export const StyledButton = styled('button', {
     size: {
       xs: {
         fontSize: '$xs',
-        padding: '$20 $30',
+        padding: '$30 $40',
       },
       sm: {
         fontSize: '$sm',
-        padding: '$30 $40',
+        padding: '$50 $60',
       },
       md: {
         fontSize: '$base',
-        padding: '$40 $50',
+        padding: '$70 $80',
       },
       lg: {
         fontSize: '$xl',
