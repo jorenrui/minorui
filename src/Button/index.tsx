@@ -4,7 +4,7 @@ import { StitchesVariants } from '@stitches/core';
 import { Spinner } from '../Spinner';
 import { StyledButton } from './component';
 
-export type IButtonProps = StitchesVariants<typeof StyledButton>;
+export type IButtonVariants = StitchesVariants<typeof StyledButton>;
 
 type IProps = React.ComponentProps<typeof StyledButton> & {
   loading?: boolean;

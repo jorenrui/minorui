@@ -1,4 +1,3 @@
-import { StitchesVariants } from '@stitches/core';
 import { keyframes, styled } from '../lib/stitches';
 
 const shimmer = keyframes({
@@ -68,5 +67,3 @@ export const StyledSkeleton = styled('span', {
     content: '""',
   },
 });
-
-export type ISkeletonVariants = StitchesVariants<typeof StyledSkeleton>;

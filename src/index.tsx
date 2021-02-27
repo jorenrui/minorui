@@ -6,6 +6,7 @@ export {
   theme,
   keyframes,
   getCssString,
+  CSS,
 } from './lib/stitches';
 
 // * Components
@@ -14,8 +15,7 @@ export { Box } from './Box';
 
 // ** Inputs
 export { Spinner, ISpinnerVariants } from './Spinner';
-export { Button } from './Button';
-export { IButtonVariants } from './Button/component';
+export { Button, IButtonVariants } from './Button';
 export { Input, IInputVariants } from './Input';
 export { TextArea, ITextAreaVariants } from './TextArea';
 export { Label, ILabelVariants } from './Label';
@@ -28,5 +28,4 @@ export { Heading, IHeadingVariants } from './Heading';
 export { Card, ICardVariants } from './Card';
 
 // ** Progress
-export { Skeleton } from './Skeleton';
-export { ISkeletonVariants } from './Skeleton/component';
+export { Skeleton, ISkeletonVariants } from './Skeleton';

@@ -1,4 +1,3 @@
-import { StitchesVariants } from '@stitches/core';
 import { styled } from '../lib/stitches';
 
 export const StyledButton = styled('button', {
@@ -370,5 +369,3 @@ export const StyledButton = styled('button', {
     width: 'default',
   },
 });
-
-export type IButtonVariants = StitchesVariants<typeof StyledButton>;

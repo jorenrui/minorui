@@ -1,7 +1,10 @@
 import React from 'react';
+import { StitchesVariants } from '@stitches/react';
 
 import { object } from '../lib/helpers/object';
 import { StyledSkeleton } from './component';
+
+export type ISkeletonVariants = StitchesVariants<typeof StyledSkeleton>;
 
 type IProps = React.ComponentProps<typeof StyledSkeleton> & {
   rows?: number;
