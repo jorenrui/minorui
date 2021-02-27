@@ -28,22 +28,22 @@ export function Inputs() {
       </Heading>
       <Block>
         <Block>
-          <Button size="large">
+          <Button size="lg">
             Large
           </Button>
         </Block>
         <Block>
-          <Button size="medium">
+          <Button size="md">
             Medium
           </Button>
         </Block>
         <Block>
-          <Button size="small">
+          <Button size="sm">
             Small
           </Button>
         </Block>
         <Block>
-          <Button size="mini">
+          <Button size="xs">
             Mini
           </Button>
         </Block>

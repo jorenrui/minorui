@@ -20,19 +20,19 @@ export const StyledButton = styled('button', {
 
   variants: {
     size: {
-      mini: {
+      xs: {
         fontSize: '$xs',
         padding: '$20 $30',
       },
-      small: {
+      sm: {
         fontSize: '$sm',
+        padding: '$30 $40',
+      },
+      md: {
+        fontSize: '$base',
         padding: '$40 $50',
       },
-      medium: {
-        fontSize: '$base',
-        padding: '$60 $80',
-      },
-      large: {
+      lg: {
         fontSize: '$xl',
         padding: '$100 $200',
       },
@@ -127,56 +127,56 @@ export const StyledButton = styled('button', {
   },
   compoundVariants: [{
     shape: 'square',
-    size: 'large',
+    size: 'lg',
     css: {
       width: '$350',
       height: '$350',
     }
   }, {
     shape: 'square',
-    size: 'medium',
+    size: 'md',
     css: {
       width: '$250',
       height: '$250',
     }
   }, {
     shape: 'square',
-    size: 'small',
+    size: 'sm',
     css: {
       width: '$200',
       height: '$200',
     }
   }, {
     shape: 'square',
-    size: 'mini',
+    size: 'xs',
     css: {
       width: '$150',
       height: '$150',
     }
   }, {
     shape: 'circle',
-    size: 'large',
+    size: 'lg',
     css: {
       width: '$350',
       height: '$350',
     }
   }, {
     shape: 'circle',
-    size: 'medium',
+    size: 'md',
     css: {
       width: '$250',
       height: '$250',
     }
   }, {
     shape: 'circle',
-    size: 'small',
+    size: 'sm',
     css: {
       width: '$200',
       height: '$200',
     }
   }, {
     shape: 'circle',
-    size: 'mini',
+    size: 'xs',
     css: {
       width: '$150',
       height: '$150',
@@ -363,7 +363,7 @@ export const StyledButton = styled('button', {
     },
   }],
   defaultVariants: {
-    size: 'medium',
+    size: 'md',
     kind: 'primary',
     shape: 'round',
     width: 'default',
