@@ -4,8 +4,6 @@ import { THEME } from './theme';
 import { CONDITIONS } from './conditions';
 import { UTILS } from './utils';
 
-export const BASE_SPACING = 5;
-
 const stitchesConfig = createCss({
   prefix: '',
   theme: THEME,
@@ -13,6 +11,7 @@ const stitchesConfig = createCss({
   utils: UTILS,
 });
 
+export const Theme = THEME;
 export const {
   styled,
   css,

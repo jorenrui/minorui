@@ -8,6 +8,7 @@ export {
   keyframes,
   getCssString,
   CSS,
+  Theme,
 } from './lib/stitches';
 
 // * Components
