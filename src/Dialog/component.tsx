@@ -55,7 +55,7 @@ export const StyledContentContainer = styled('div', {
   padding: '$100',
 });
 
-export const StyledFooter = styled('div', {
+export const StyledFooter = styled('footer', {
   display: 'flex',
 
   '& > button': {
