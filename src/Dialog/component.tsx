@@ -93,7 +93,7 @@ export const StyledButton = styled('button', {
   background: 'transparent',
   border: 'none',
   padding: '$100 $300',
-  fontType: 'sm',
+  fontType: 'xs',
 
   '&:hover, &focus': {
     backgroundColor: '$primary100',
