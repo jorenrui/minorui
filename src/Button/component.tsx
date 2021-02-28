@@ -30,7 +30,7 @@ export const StyledButton = styled('button', {
       },
       md: {
         fontSize: '$base',
-        padding: '$70 $80',
+        padding: '$80 $100',
       },
       lg: {
         fontSize: '$xl',
