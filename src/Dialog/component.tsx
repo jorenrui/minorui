@@ -17,15 +17,37 @@ export const StyledContent = styled(RadixDialog.Content, {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  minWidth: '$2000',
-  maxWidth: 'max-content',
-  maxHeight: '85vh',
   backgroundColor: 'white',
   borderRadius: '$md',
   overflow: 'auto',
+  maxHeight: '85vh',
+  minWidth: '300px',
 
   '&:focus': {
     outline: 'none',
+  },
+
+  variants: {
+    size: {
+      auto: {
+        maxWidth: 'max-content',
+      },
+      sm: {
+        maxWidth: '400px',
+        width: '80vw',
+      },
+      md: {
+        maxWidth: '500px',
+        width: '80vw',
+      },
+      lg: {
+        maxWidth: '700px',
+        width: '80vw',
+      },
+    },
+  },
+  defaultVariants: {
+    size: 'auto',
   },
 });
 
@@ -52,7 +74,7 @@ export const StyledIconContainer = styled('div', {
 
 export const StyledContentContainer = styled('div', {
   boxSizing: 'border-box',
-  padding: '$100',
+  padding: '$200',
 });
 
 export const StyledFooter = styled('footer', {
