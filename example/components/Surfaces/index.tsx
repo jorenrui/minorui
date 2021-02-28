@@ -6,6 +6,7 @@ import {
   Heading,
   Box,
   ClickableDiv,
+  Dialog,
 } from '../../../dist';
 
 const Grid = styled('div', {
@@ -50,6 +51,17 @@ export function Surfaces() {
         <Heading as="h4" size="3xl" css={{ marginTop: '$3' }}>Heading</Heading>
         <Text>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus eaque ad magnam mollitia ipsa, cumque recusandae explicabo suscipit quis, iure, dolore dignissimos aut ab voluptatibus eum in odio harum earum.</Text>
       </ClickableDiv>
+      <Heading as="h3" size="4xl">
+        Dialog
+      </Heading>
+      <Dialog.Root>
+        <Dialog.Trigger>Open</Dialog.Trigger>
+        <Dialog.Overlay />
+        <Dialog.Content>
+          <Text>Dialog content</Text>
+          <Dialog.Close>Close</Dialog.Close>
+        </Dialog.Content>
+      </Dialog.Root>
     </Box>
   );
 }
