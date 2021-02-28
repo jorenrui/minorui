@@ -1,6 +1,11 @@
 import * as React from 'react';
 
-import { Card, Skeleton, styled } from '../../../dist';
+import {
+  Card,
+  Heading,
+  Skeleton,
+  styled,
+} from '../../../dist';
 
 const Grid = styled('div', {
   display: 'grid',
@@ -10,25 +15,33 @@ const Grid = styled('div', {
 
 export function Progress() {
   return (
-    <Grid>
-      <Card>
-        <Skeleton type="avatar" />
-        <Skeleton type="heading" width="50%" />
-        <Skeleton type="caption" width="30%" />
-        <Skeleton rows={3} width="90%" />
-      </Card>
-      <Card>
-        <Skeleton type="avatar" />
-        <Skeleton type="heading" width="50%" />
-        <Skeleton type="caption" width="30%" />
-        <Skeleton rows={3} width="90%" />
-      </Card>
-      <Card>
-        <Skeleton type="avatar" />
-        <Skeleton type="heading" width="50%" />
-        <Skeleton type="caption" width="30%" />
-        <Skeleton rows={3} width="90%" />
-      </Card>
-    </Grid>
+    <>
+      <Heading as="h2" size="5xl">
+        Progress
+      </Heading>
+      <Heading as="h3" size="4xl">
+        Skeleton
+      </Heading>
+      <Grid>
+        <Card>
+          <Skeleton type="avatar" />
+          <Skeleton type="heading" width="50%" />
+          <Skeleton type="caption" width="30%" />
+          <Skeleton rows={3} width="90%" />
+        </Card>
+        <Card>
+          <Skeleton type="avatar" />
+          <Skeleton type="heading" width="50%" />
+          <Skeleton type="caption" width="30%" />
+          <Skeleton rows={3} width="90%" />
+        </Card>
+        <Card>
+          <Skeleton type="avatar" />
+          <Skeleton type="heading" width="50%" />
+          <Skeleton type="caption" width="30%" />
+          <Skeleton rows={3} width="90%" />
+        </Card>
+      </Grid>
+    </>
   );
 }
