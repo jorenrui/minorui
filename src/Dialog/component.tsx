@@ -17,29 +17,63 @@ export const StyledContent = styled(RadixDialog.Content, {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  minWidth: '$1000',
+  minWidth: '$2000',
   maxWidth: 'max-content',
   maxHeight: '85vh',
   backgroundColor: 'white',
-  borderRadius: '$sm',
+  borderRadius: '$md',
   overflow: 'auto',
-  padding: '$100',
 
   '&:focus': {
     outline: 'none',
   },
 });
 
-export const StyledTrigger = styled(RadixDialog.Trigger, {
-  fontType: 'base',
-  border: 'none',
-  backgroundColor: 'transparent',
-  borderRadius: '$sm',
-});
-
 export const StyledClose = styled(RadixDialog.Close, {
   fontType: 'base',
   border: 'none',
   backgroundColor: 'transparent',
-  borderRadius: '$sm',
+  borderRadius: '$full',
+  display: 'flex',
+  placeContent: 'center',
+  padding: '$50',
+
+  '&:hover, &:focus': {
+    backgroundColor: '$primary100',
+  }
+});
+
+export const StyledIconContainer = styled('div', {
+  position: 'absolute',
+  top: '$20',
+  right: '$20',
+  width: 'auto',
+});
+
+export const StyledContentContainer = styled('div', {
+  boxSizing: 'border-box',
+  padding: '$100',
+});
+
+export const StyledFooter = styled('div', {
+  display: 'flex',
+
+  '& > button': {
+    flexGrow: 1,
+    borderTop: '1px solid $colors$primary200',
+  },
+  '& > button:nth-child(2)': {
+    borderLeft: '1px solid $colors$primary200',
+  },
+});
+
+export const StyledButton = styled('button', {
+  background: 'transparent',
+  border: 'none',
+  padding: '$100 $300',
+  fontType: 'sm',
+
+  '&:hover, &focus': {
+    backgroundColor: '$primary100',
+  },
 });

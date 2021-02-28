@@ -6,8 +6,8 @@ import {
   Heading,
   Box,
   ClickableDiv,
-  Dialog,
 } from '../../../dist';
+import { SurfacesDialog } from './SurfacesDialogs';
 
 const Grid = styled('div', {
   display: 'grid',
@@ -54,14 +54,7 @@ export function Surfaces() {
       <Heading as="h3" size="4xl">
         Dialog
       </Heading>
-      <Dialog.Root>
-        <Dialog.Trigger>Open</Dialog.Trigger>
-        <Dialog.Overlay />
-        <Dialog.Content>
-          <Text>Dialog content</Text>
-          <Dialog.Close>Close</Dialog.Close>
-        </Dialog.Content>
-      </Dialog.Root>
+      <SurfacesDialog />
     </Box>
   );
 }
