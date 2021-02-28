@@ -7,17 +7,13 @@ export const StyledTrigger = styled(RadixDropdownMenu.Trigger, {
   border: 'none',
   backgroundColor: 'transparent',
   borderRadius: '$sm',
-
-  '&:hover, &:focus': {
-    backgroundColor: '$primary100',
-  },
 });
 
 export const StyledContent = styled(RadixDropdownMenu.Content, {
   backgroundColor: '$white',
   borderRadius: '$sm',
   padding: '$30',
-  minWidth: '$900',
+  minWidth: '$800',
   boxShadow: '$lg',
 });
 
@@ -29,8 +25,17 @@ export const StyledItem = styled(RadixDropdownMenu.Item, {
 
   '&:hover, &:focus': {
     outline: 'none',
-    backgroundColor: '$primary',
-    color: '$white',
+    backgroundColor: '$primary100',
+  },
+
+  variants: {
+    active: {
+      true: {
+        outline: 'none',
+        backgroundColor: '$primary',
+        color: '$white',
+      },
+    },
   },
 });
 
