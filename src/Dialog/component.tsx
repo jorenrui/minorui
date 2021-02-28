@@ -56,10 +56,10 @@ export const StyledContentContainer = styled('div', {
 });
 
 export const StyledFooter = styled('footer', {
-  display: 'flex',
+  display: 'grid',
+  gridTemplateColumns: '1fr 1fr',
 
   '& > button': {
-    flexGrow: 1,
     borderTop: '1px solid $colors$primary200',
   },
   '& > button:nth-child(2)': {
