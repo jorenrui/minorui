@@ -37,3 +37,6 @@ export { Skeleton, ISkeletonVariants } from './Skeleton';
 
 // ** Navigation
 export { DropdownMenu } from './DropdownMenu';
+
+// ** Icons
+export { X } from './lib/icons/X';
