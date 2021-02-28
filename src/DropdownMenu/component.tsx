@@ -22,10 +22,12 @@ export const StyledItem = styled(RadixDropdownMenu.Item, {
   fontType: 'sm',
   borderRadius: '$xs',
   cursor: 'default',
+  color: '$primary',
 
   '&:hover, &:focus': {
     outline: 'none',
     backgroundColor: '$primary100',
+    color: '$primary',
   },
 
   variants: {
