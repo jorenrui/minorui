@@ -26,6 +26,7 @@ export { Heading, IHeadingVariants } from './Heading';
 
 // ** Surfaces
 export { Card, ICardVariants } from './Card';
+export { ClickableDiv, IClickableDivVariants } from './ClickableDiv';
 
 // ** Progress
 export { Skeleton, ISkeletonVariants } from './Skeleton';

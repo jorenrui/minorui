@@ -1,5 +1,12 @@
 import * as React from 'react';
-import { Card, styled, Text, Heading, Box } from '../../../dist';
+import {
+  Card,
+  styled,
+  Text,
+  Heading,
+  Box,
+  ClickableDiv,
+} from '../../../dist';
 
 const Grid = styled('div', {
   display: 'grid',
@@ -30,6 +37,19 @@ export function Surfaces() {
           <Text>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus eaque ad magnam mollitia ipsa, cumque recusandae explicabo suscipit quis, iure, dolore dignissimos aut ab voluptatibus eum in odio harum earum.</Text>
         </Card>
       </Grid>
+      <Heading as="h3" size="4xl">
+        Clickable Div
+      </Heading>
+      <ClickableDiv onClick={() => alert('clicked.')}>
+        <Card>
+          <Heading as="h4" size="3xl" css={{ marginTop: '$3' }}>Heading</Heading>
+          <Text>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus eaque ad magnam mollitia ipsa, cumque recusandae explicabo suscipit quis, iure, dolore dignissimos aut ab voluptatibus eum in odio harum earum.</Text>
+        </Card>
+      </ClickableDiv>
+      <ClickableDiv type="card" onClick={() => alert('clicked.')}>
+        <Heading as="h4" size="3xl" css={{ marginTop: '$3' }}>Heading</Heading>
+        <Text>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus eaque ad magnam mollitia ipsa, cumque recusandae explicabo suscipit quis, iure, dolore dignissimos aut ab voluptatibus eum in odio harum earum.</Text>
+      </ClickableDiv>
     </Box>
   );
 }
