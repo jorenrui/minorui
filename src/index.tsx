@@ -1,4 +1,5 @@
 // * Stitches Config
+export { StitchesVariants } from '@stitches/react';
 export {
   styled,
   css,
@@ -31,3 +32,6 @@ export { ClickableDiv, IClickableDivVariants } from './ClickableDiv';
 
 // ** Progress
 export { Skeleton, ISkeletonVariants } from './Skeleton';
+
+// ** Navigation
+export { DropdownMenu } from './DropdownMenu';
