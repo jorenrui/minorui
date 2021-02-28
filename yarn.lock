@@ -10,6 +10,13 @@
     "@radix-ui/utils" "0.0.3"
     csstype "^3.0.4"
 
+"@radix-ui/react-accessible-icon@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-accessible-icon/-/react-accessible-icon-0.0.5.tgz#cec6e093a0e4a9873afec22ab5f0f001c103f872"
+  integrity sha512-brJbKqRZiK1KN8LfhemlOISgoS6QzfSiKUyHi5bHCkaxZAOqvnwM4gBedVyqZ77EstZC+/yd7PsbwYCfQtTEkw==
+  dependencies:
+    "@radix-ui/react-visually-hidden" "0.0.5"
+
 "@radix-ui/react-arrow@0.0.5":
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-arrow/-/react-arrow-0.0.5.tgz#f7f4a156c20262e0623a61904c49a62ccfbef55d"
@@ -153,6 +160,15 @@
   integrity sha512-OEPLfh8J6JH0Cqv3VrvI8NYQKX1nw0qVVNM14lYCgRGmAI49YrK51tcOIzqzdfuBkXLCX5QzrwK8//DjwoAbhQ==
   dependencies:
     "@radix-ui/react-polymorphic" "0.0.5"
+    "@radix-ui/utils" "0.0.3"
+
+"@radix-ui/react-visually-hidden@0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-visually-hidden/-/react-visually-hidden-0.0.5.tgz#9e04587d070d36ba942c337523a23b3b9d296af7"
+  integrity sha512-8T8asSbt96IurSamS3uF+g2dc5vNieYCbHKloBn2dGq6yrr92RCxW1p0q5lX8IG9zDQq+shOPPq7wof1OPMv8Q==
+  dependencies:
+    "@radix-ui/react-polymorphic" "0.0.5"
+    "@radix-ui/react-primitive" "0.0.4"
     "@radix-ui/utils" "0.0.3"
 
 "@radix-ui/utils@0.0.3":
