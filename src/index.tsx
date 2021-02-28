@@ -11,7 +11,8 @@ export {
 
 // * Components
 // ** Layout
-export { Box } from './Box';
+export { Box, IBoxVariants } from './Box';
+export { Container, IContainerVariants } from './Container';
 
 // ** Inputs
 export { Spinner, ISpinnerVariants } from './Spinner';
