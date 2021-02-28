@@ -26,8 +26,8 @@ export const StyledItem = styled(RadixDropdownMenu.Item, {
 
   '&:hover, &:focus': {
     outline: 'none',
-    backgroundColor: '$primary100',
-    color: '$primary',
+    backgroundColor: '$primary',
+    color: '$white',
   },
 
   variants: {
