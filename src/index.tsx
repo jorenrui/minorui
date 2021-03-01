@@ -33,7 +33,7 @@ export { ClickableDiv } from './ClickableDiv';
 export { Dialog } from './Dialog';
 
 // ** Progress
-export { Skeleton, ISkeletonVariants } from './Skeleton';
+export { Skeleton } from './Skeleton';
 
 // ** Feedback
 export { Note } from './Note';
