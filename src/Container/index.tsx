@@ -1,7 +1,4 @@
-import { StitchesVariants } from '@stitches/react';
 import { styled } from '../lib/stitches';
-
-export type IContainerVariants = StitchesVariants<typeof Container>;
 
 export const Container = styled('div', {
   height: '100%',
