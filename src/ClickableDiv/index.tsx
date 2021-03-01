@@ -1,21 +1,45 @@
 import React from 'react';
 import { StitchesVariants } from '@stitches/react';
+import type * as Polymorphic from '@radix-ui/react-polymorphic';
 
+import { styled } from '../lib/stitches';
 import { ENTER_CODE, SPACE_CODE } from '../lib/constants/keycodes';
-import { StyledClickableDiv } from './component';
+import { CSSProp } from '../lib/types';
 
-export type IClickableDivVariants = StitchesVariants<typeof StyledClickableDiv>;
+const DEFAULT_TAG = 'div';
 
-type IProps = React.ComponentProps<typeof StyledClickableDiv> & {
+type ClickableDivCSSProp = CSSProp<typeof StyledClickableDiv>;
+type ClickableDivVariants = StitchesVariants<typeof StyledClickableDiv>;
+type ClickableDivOwnProps = ClickableDivCSSProp & ClickableDivVariants & {
   children: React.ReactNode;
   onClick: (event: React.MouseEvent<HTMLDivElement> | React.KeyboardEvent<HTMLDivElement>) => void;
 }
 
-export const ClickableDiv = React.forwardRef<HTMLDivElement, IProps>(({
-  children,
-  onClick,
-  ...props
-}, forwardedRef) => {
+const StyledClickableDiv = styled(DEFAULT_TAG, {
+  outlineColor: '$primary900',
+
+  variants: {
+    type: {
+      card: {
+        outline: 'none',
+        padding: '$50',
+
+        '&:focus': {
+          backgroundColor: '$primary100',
+        },
+        '&:hover': {
+          backgroundColor: '$primary100',
+        },
+      },
+    },
+  },
+});
+
+type ClickableDivComponent = Polymorphic.ForwardRefComponent<typeof DEFAULT_TAG, ClickableDivOwnProps>;
+
+export const ClickableDiv = React.forwardRef((props, forwardedRef) => {
+  const { children, onClick, ...restProps } = props;
+
   const handleKeyDown = (evt: React.KeyboardEvent<HTMLDivElement>) => {
     if (evt.code === ENTER_CODE || evt.code === SPACE_CODE) {
       evt.preventDefault();
@@ -30,9 +54,9 @@ export const ClickableDiv = React.forwardRef<HTMLDivElement, IProps>(({
       tabIndex={0}
       onKeyDown={handleKeyDown}
       onClick={onClick}
-      {...props}
+      {...restProps}
     >
       {children}
     </StyledClickableDiv>
   );
-});
+}) as ClickableDivComponent;
