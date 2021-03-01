@@ -1,4 +1,3 @@
-import { StitchesVariants } from '@stitches/core';
 import { styled } from '../lib/stitches';
 
 export const Text = styled('p', {
@@ -91,5 +90,3 @@ export const Text = styled('p', {
     color: 'primary',
   },
 });
-
-export type ITextVariants = StitchesVariants<typeof Text>;

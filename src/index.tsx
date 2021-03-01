@@ -17,15 +17,15 @@ export { Box, IBoxVariants } from './Box';
 export { Container } from './Container';
 
 // ** Inputs
-export { Spinner, ISpinnerVariants } from './Spinner';
+export { Spinner } from './Spinner';
 export { Button } from './Button';
-export { Input, IInputVariants } from './Input';
-export { TextArea, ITextAreaVariants } from './TextArea';
-export { Label, ILabelVariants } from './Label';
+export { Input } from './Input';
+export { TextArea } from './TextArea';
+export { Label } from './Label';
 
 // ** Typography
-export { Text, ITextVariants } from './Text';
-export { Heading, IHeadingVariants } from './Heading';
+export { Text } from './Text';
+export { Heading } from './Heading';
 
 // ** Surfaces
 export { Card } from './Card';

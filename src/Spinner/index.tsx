@@ -1,4 +1,3 @@
-import { StitchesVariants } from '@stitches/core';
 import { keyframes, styled } from '../lib/stitches';
 
 const rotate = keyframes({
@@ -87,5 +86,3 @@ export const Spinner = styled('span', {
     size: 'medium',
   },
 });
-
-export type ISpinnerVariants = StitchesVariants<typeof Spinner>;

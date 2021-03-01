@@ -1,4 +1,3 @@
-import { StitchesVariants } from '@stitches/core';
 import { styled } from '../lib/stitches';
 
 export const Heading = styled('h1', {
@@ -115,5 +114,3 @@ export const Heading = styled('h1', {
     color: 'primary',
   },
 });
-
-export type IHeadingVariants = StitchesVariants<typeof Heading>;

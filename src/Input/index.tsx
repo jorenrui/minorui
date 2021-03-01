@@ -1,7 +1,4 @@
-import { StitchesVariants } from '@stitches/core';
 import { styled } from '../lib/stitches';
-
-export type IInputVariants = StitchesVariants<typeof Input>;
 
 export const Input = styled('input', {
   display: 'block',

@@ -1,7 +1,4 @@
-import { StitchesVariants } from '@stitches/core';
 import { styled } from '../lib/stitches';
-
-export type ITextAreaVariants = StitchesVariants<typeof TextArea>;
 
 export const TextArea = styled('textarea', {
   display: 'block',
