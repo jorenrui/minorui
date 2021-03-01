@@ -1,4 +1,3 @@
-import { StitchesVariants } from '@stitches/core';
 import { CSS, css, styled } from '../lib/stitches';
 
 const CARD_STYLES: CSS = {
@@ -18,5 +17,3 @@ const CARD_STYLES: CSS = {
 
 export const card = css(CARD_STYLES);
 export const Card = styled('div', CARD_STYLES);
-
-export type ICardVariants = StitchesVariants<typeof Card>;
