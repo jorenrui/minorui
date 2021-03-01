@@ -8,10 +8,12 @@ import { Surfaces } from './components/Surfaces';
 import { Typography } from './components/Typography';
 import { Progress } from './components/Progress';
 import { Navigation } from './components/Navigation';
+import { Feedback } from './components/Feedback';
 
 const App = () => {
   return (
     <Container>
+      <Feedback />
       <Inputs />
       <Surfaces />
       <Navigation />

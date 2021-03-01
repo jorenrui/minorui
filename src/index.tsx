@@ -35,6 +35,9 @@ export { Dialog } from './Dialog';
 // ** Progress
 export { Skeleton, ISkeletonVariants } from './Skeleton';
 
+// ** Feedback
+export { Note } from './Note';
+
 // ** Navigation
 export { DropdownMenu } from './DropdownMenu';
 
