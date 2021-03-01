@@ -43,6 +43,10 @@ I don't really want to reinvent the wheel when it comes to accessibility so I us
 
 A styling library that I am really a fan of. I really love how you can add variants to the styled components. You must check this out 👀
 
+### [Hero Icons](https://heroicons.com/)
+
+I'm currently using Hero Icons, a set of free MIT-licensed svg icons by the makers of Tailwind CSS.
+
 ## Changelog
 
 [Changelog](https://github.com/jorenrui/minorui/blob/main/CHANGELOG.md)
