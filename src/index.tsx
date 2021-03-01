@@ -13,7 +13,7 @@ export {
 
 // * Components
 // ** Layout
-export { Box, IBoxVariants } from './Box';
+export { Box } from './Box';
 export { Container } from './Container';
 
 // ** Inputs
