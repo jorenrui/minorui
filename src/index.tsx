@@ -14,11 +14,11 @@ export {
 // * Components
 // ** Layout
 export { Box, IBoxVariants } from './Box';
-export { Container, IContainerVariants } from './Container';
+export { Container } from './Container';
 
 // ** Inputs
 export { Spinner, ISpinnerVariants } from './Spinner';
-export { Button, IButtonVariants } from './Button';
+export { Button } from './Button';
 export { Input, IInputVariants } from './Input';
 export { TextArea, ITextAreaVariants } from './TextArea';
 export { Label, ILabelVariants } from './Label';
@@ -28,8 +28,8 @@ export { Text, ITextVariants } from './Text';
 export { Heading, IHeadingVariants } from './Heading';
 
 // ** Surfaces
-export { Card, ICardVariants } from './Card';
-export { ClickableDiv, IClickableDivVariants } from './ClickableDiv';
+export { Card } from './Card';
+export { ClickableDiv } from './ClickableDiv';
 export { Dialog } from './Dialog';
 
 // ** Progress

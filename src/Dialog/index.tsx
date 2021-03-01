@@ -1,92 +1,38 @@
-import React from 'react';
-import { useState } from 'react';
-import * as AccessibleIcon from '@radix-ui/react-accessible-icon';
-import { X } from '../lib/icons/X';
-import { object } from '../lib/helpers/object';
-import {
-  StyledRoot,
-  StyledContent,
-  StyledClose,
-  StyledOverlay,
-  StyledContentContainer,
-  StyledIconContainer,
-  StyledFooter,
-  StyledButton,
-} from './component';
-import { Heading } from '../Heading';
+import { styled } from '../lib/stitches';
+import { DialogRoot } from './dialog-root';
+import { DialogTitle } from './dialog-title';
 
-type IProps = React.ComponentProps<typeof StyledContent> & {
-  id?: string;
-  open: boolean;
-  onClose: (event: MouseEvent | TouchEvent) => void;
-  children: React.ReactNode;
-}
-
-const DialogRoot = React.forwardRef<HTMLDivElement, IProps>((
-  {
-    id,
-    open,
-    onClose,
-    children,
-    onPointerDownOutside,
-    ...props
-  },
-  forwardedRef,
-) => {
-  const [dialogId] = useState(() => (id ? `dialog-${id.replace(/\s+/g, '-')}` : undefined));
-
-  const handleCloseClick = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-    onClose(event as unknown as MouseEvent);
-  }
-
-  return (
-    <StyledRoot id={dialogId} open={open}>
-      <StyledOverlay />
-      <StyledContent
-        ref={forwardedRef}
-        onPointerDownOutside={onPointerDownOutside ?? onClose}
-        {...props}
-      >
-        <StyledIconContainer>
-          <StyledClose onClick={handleCloseClick}>
-            <AccessibleIcon.Root label="Close">
-              <X height="20px" width="20px" />
-            </AccessibleIcon.Root>
-          </StyledClose>
-        </StyledIconContainer>
-          {children}
-      </StyledContent>
-    </StyledRoot>
-  );
+const StyledContent = styled('div', {
+  boxSizing: 'border-box',
+  padding: '$200',
 });
 
-type ITitleProps = React.ComponentProps<typeof Heading>;
+const StyledFooter = styled('footer', {
+  display: 'grid',
+  gridTemplateColumns: '1fr 1fr',
 
-const DialogTitle = React.forwardRef<HTMLHeadingElement, ITitleProps>((
-  {
-    size = '4xl',
-    children,
-    css,
-    ...props
+  '& > button': {
+    borderTop: '1px solid $colors$primary200',
   },
-  forwardedRef,
-) => {
-  return (
-    <Heading
-      ref={forwardedRef}
-      as="h2"
-      size={size}
-      css={{ textAlign: 'center', ...object(css) }}
-      {...props}
-    >
-      {children}
-    </Heading>
-  )
+  '& > button:nth-child(2)': {
+    borderLeft: '1px solid $colors$primary200',
+  },
+});
+
+const StyledButton = styled('button', {
+  background: 'transparent',
+  border: 'none',
+  padding: '$100 $300',
+  fontType: 'xs',
+
+  '&:hover, &focus': {
+    backgroundColor: '$primary100',
+  },
 });
 
 export const Dialog = {
   Root: DialogRoot,
-  Content: StyledContentContainer,
+  Content: StyledContent,
   Title: DialogTitle,
   Footer: StyledFooter,
   Button: StyledButton,
