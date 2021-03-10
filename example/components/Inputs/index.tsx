@@ -8,6 +8,7 @@ import {
   Input,
   Label,
   TextArea,
+  Spinner,
 } from '../../../dist';
 
 const Block = styled('span', {
@@ -20,6 +21,13 @@ export function Inputs() {
       <Heading as="h2" size="5xl">
         Inputs
       </Heading>
+      <Heading as="h3" size="4xl">
+        Spinners
+      </Heading>
+      <Spinner size="large" />
+      <Spinner size="medium" />
+      <Spinner size="small" />
+      <Spinner size="mini" />
       <Heading as="h3" size="4xl">
         Buttons
       </Heading>

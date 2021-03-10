@@ -44,6 +44,7 @@ export const Spinner = styled('span', {
       large: {
         width: '$350',
         height: '$350',
+        borderWidth: '10px',
 
         '&::after': {
           width: '$350',
@@ -51,8 +52,9 @@ export const Spinner = styled('span', {
         }
       },
       medium: {
-        width: '$50',
-        height: '$50',
+        width: '$250',
+        height: '$250',
+        borderWidth: '8px',
 
         '&::after': {
           width: '$250',
@@ -62,6 +64,7 @@ export const Spinner = styled('span', {
       small: {
         width: '$200',
         height: '$200',
+        borderWidth: '5px',
 
         '&::after': {
           width: '$200',
@@ -71,6 +74,7 @@ export const Spinner = styled('span', {
       mini: {
         width: '$150',
         height: '$150',
+        borderWidth: '4px',
 
         '&::after': {
           width: '$150',
