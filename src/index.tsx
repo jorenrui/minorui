@@ -43,3 +43,6 @@ export { DropdownMenu } from './DropdownMenu';
 
 // ** Icons
 export { X } from './lib/icons/X';
+
+// ** Utilities
+export * as AccessibleIcon from '@radix-ui/react-accessible-icon';
