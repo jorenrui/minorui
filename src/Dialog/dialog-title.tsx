@@ -19,13 +19,14 @@ export const DialogTitle = React.forwardRef((props, forwardedRef) => {
     size = '4xl',
     children,
     css,
+    as,
     ...restProps
   } = props;
 
   return (
     <Heading
       ref={forwardedRef}
-      as="h2"
+      as={'h2' || as}
       size={size}
       css={{ textAlign: 'center', ...object(css) }}
       {...restProps}
