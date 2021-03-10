@@ -32,6 +32,9 @@ export { Card } from './Card';
 export { ClickableDiv } from './ClickableDiv';
 export { Dialog } from './Dialog';
 
+// ** Data Display
+export { Headline } from './Headline';
+
 // ** Progress
 export { Skeleton } from './Skeleton';
 

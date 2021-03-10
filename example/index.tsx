@@ -9,12 +9,14 @@ import { Typography } from './components/Typography';
 import { Progress } from './components/Progress';
 import { Navigation } from './components/Navigation';
 import { Feedback } from './components/Feedback';
+import { DataDisplay } from './components/DataDisplay';
 
 const App = () => {
   return (
     <Container>
       <Feedback />
       <Inputs />
+      <DataDisplay />
       <Surfaces />
       <Navigation />
       <Typography />
