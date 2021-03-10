@@ -3,11 +3,9 @@ import { keyframes, styled } from '../lib/stitches';
 const rotate = keyframes({
   '0%': {
     transform: 'rotate(0deg)',
-    WebkitTransform: 'rotate(0deg)',
   },
   '100%': {
     transform: 'rotate(360deg)',
-    WebkitTransform: 'rotate(360deg)',
   },
 });
 

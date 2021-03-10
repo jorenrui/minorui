@@ -5,11 +5,9 @@ import { keyframes, styled } from '../lib/stitches';
 const shimmer = keyframes({
   '0%': {
     transform: 'translateX(0)',
-    WebkitTransform: 'translateX(0)',
   },
   '100%': {
     transform: 'translateX(100%)',
-    WebkitTransform: 'translateX(100%)',
   },
 });
 
