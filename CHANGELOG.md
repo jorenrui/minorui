@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [[0.1.9]](https://github.com/jorenrui/minorui/releases/tag/v0.1.9) - 2021-03-10
+### Added
+- Add Headline component
+- Export Accessible Icon from Radix UI
+- Add acknowledgment to Hero Icons in README.md
+### Changed
+- Update stitches from `0.1.0-canary.12` to `0.1.0-canary.17`
+### Fixed
+- Add `as` prop to dialog title
+
 ## [[0.1.8]](https://github.com/jorenrui/minorui/releases/tag/v0.1.8) - 2021-03-01
 ### Added
 - Add variants to Dialog.Root
