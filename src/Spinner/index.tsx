@@ -72,13 +72,13 @@ export const Spinner = styled('span', {
         }
       },
       mini: {
-        width: '$150',
-        height: '$150',
-        borderWidth: '4px',
+        width: '$100',
+        height: '$100',
+        borderWidth: '3px',
 
         '&::after': {
-          width: '$150',
-          height: '$150',
+          width: '$100',
+          height: '$100',
         }
       },
     },

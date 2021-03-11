@@ -405,6 +405,7 @@ export const Button = React.forwardRef((props, forwardedRef) => {
             color={kind === 'primary'
               ? 'secondary'
               : 'primary'}
+            size="mini"
             css={{
               position: 'absolute',
               top: 0,
