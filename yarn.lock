@@ -108,6 +108,11 @@
   resolved "https://registry.yarnpkg.com/@radix-ui/react-polymorphic/-/react-polymorphic-0.0.5.tgz#7742695d5a47c732b3c5f627dfcd037c03f07f5b"
   integrity sha512-XjAsBfFaa4FFYXZNPa9icHjDEqzvH+TVxQQwYJU2iY+6Ne1DhHXMLrGt/Vk0+BojMSPzg99NhjXROjQ4Fw30Hw==
 
+"@radix-ui/react-polymorphic@0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-polymorphic/-/react-polymorphic-0.0.6.tgz#7cbadb346925d459984f540bab32403913f60ef0"
+  integrity sha512-M6VVxOLII8bdnKIYK9qDH8kO8/sYJXunA0VcNKlGJvD95GuolwypXGi3gLIHCqlAozHMFJ5hzy/Vsy/rCU8Glw==
+
 "@radix-ui/react-popper@0.0.6":
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-popper/-/react-popper-0.0.6.tgz#e6dcc3f35b07c342b38252a5370a110da4c0ec06"
@@ -146,6 +151,13 @@
     "@radix-ui/react-polymorphic" "0.0.5"
     "@radix-ui/utils" "0.0.3"
 
+"@radix-ui/react-primitive@0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-primitive/-/react-primitive-0.0.5.tgz#2e56cf75ada56258458957ae930771e502f151b9"
+  integrity sha512-zZacpav02cmljSaBfuc/jTqJdsZmVSQsp9Eh03v6ksS/6sGmLga46cwztDzb2by/x2izodke5NdHrVOUNAMbeA==
+  dependencies:
+    "@radix-ui/react-polymorphic" "0.0.6"
+
 "@radix-ui/react-roving-focus@0.0.5":
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-roving-focus/-/react-roving-focus-0.0.5.tgz#ce92310bb154421f16df3df84e266f42b9b375ba"
@@ -170,6 +182,14 @@
     "@radix-ui/react-polymorphic" "0.0.5"
     "@radix-ui/react-primitive" "0.0.4"
     "@radix-ui/utils" "0.0.3"
+
+"@radix-ui/react-visually-hidden@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-visually-hidden/-/react-visually-hidden-0.0.6.tgz#a22a8ecf7df8c353c0470d1c9168aac762a98ca0"
+  integrity sha512-2nsYMHBDot50fCSH1pi/Cu27Z/D3HQigqqcXrbCeCzVb2nmI5BWi6hxScNzDr+4KBB1qZ9OfUqGttLJrPwkM5A==
+  dependencies:
+    "@radix-ui/react-polymorphic" "0.0.6"
+    "@radix-ui/react-primitive" "0.0.5"
 
 "@radix-ui/utils@0.0.3":
   version "0.0.3"
