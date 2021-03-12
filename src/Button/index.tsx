@@ -1,6 +1,7 @@
 import React from 'react';
 import { StitchesVariants } from '@stitches/core';
 import type * as Polymorphic from '@radix-ui/react-polymorphic';
+import * as VisuallyHidden from '@radix-ui/react-visually-hidden';
 
 import { CSSProp } from '../lib/types';
 import { styled } from '../lib/stitches';
@@ -12,6 +13,7 @@ type ButtonCSSProp = CSSProp<typeof StyledButton>;
 type ButtonVariants = StitchesVariants<typeof StyledButton>;
 type ButtonOwnProps = ButtonCSSProp & ButtonVariants & {
   loading?: boolean;
+  loadingText?: string;
   children: React.ReactNode;
 }
 
@@ -390,6 +392,7 @@ type ButtonComponent = Polymorphic.ForwardRefComponent<typeof DEFAULT_TAG, Butto
 export const Button = React.forwardRef((props, forwardedRef) => {
   const {
     loading,
+    loadingText,
     kind,
     children,
     ...restProps
@@ -415,6 +418,9 @@ export const Button = React.forwardRef((props, forwardedRef) => {
               margin: 'auto',
             }}
           />
+          <VisuallyHidden.Root>
+            {loadingText ?? 'Loading, please wait.'}
+          </VisuallyHidden.Root>
           <span style={{ visibility: 'hidden' }}>{children}</span>
         </>
       )}
