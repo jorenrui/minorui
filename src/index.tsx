@@ -49,3 +49,4 @@ export { X } from './lib/icons/X';
 
 // ** Utilities
 export * as AccessibleIcon from '@radix-ui/react-accessible-icon';
+export * as VisuallyHidden from '@radix-ui/react-visually-hidden';
