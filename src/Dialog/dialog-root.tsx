@@ -42,7 +42,7 @@ const StyledContent = styled(RadixDialog.Content, {
   borderRadius: '$md',
   overflow: 'auto',
   maxHeight: '85vh',
-  minWidth: '300px',
+  minWidth: '320px',
 
   '&:focus': {
     outline: 'none',
