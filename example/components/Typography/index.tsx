@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Container } from '../Container';
-import { Text, styled, Heading } from '../../../dist';
+import { Text, styled, Heading, Link, Box } from '../../../dist';
 
 const Grid = styled('div', {
   width: '$full',
@@ -43,6 +43,47 @@ export function Typography() {
         <Text size="9xl">9xl</Text>
         <Text size="9xl" overflow="truncate">The five boxing wizards jump quickly.</Text>
       </Grid>
+      <Heading as="h3" size="4xl">
+        Links
+      </Heading>
+      <Box display="flex" css={{ gap: '$100' }}>
+        <Link text>
+          Text Link
+        </Link>
+        <Link ghost>
+          Ghost Link
+        </Link>
+        <Link bold>
+          Bold Link
+        </Link>
+        <br />
+      </Box>
+      <Box display="flex" css={{ gap: '$100' }}>
+        <Link color="default">
+          Default Link
+        </Link>
+        <Link color="secondary">
+          Secondary Link
+        </Link>
+        <Link color="tertiary">
+          Tertiary Link
+        </Link>
+        <Link color="accent">
+          Accent Link
+        </Link>
+        <Link color="info">
+          Info Link
+        </Link>
+        <Link color="error">
+          Error Link
+        </Link>
+        <Link color="warning">
+          Warning Link
+        </Link>
+        <Link color="success">
+          Success Link
+        </Link>
+      </Box>
     </Container>
   );
 }

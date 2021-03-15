@@ -4,6 +4,7 @@ import { styled } from '../lib/stitches';
 export const Link = styled('a', {
   display: 'inline-block',
   outlineColor: '$primary',
+  textDecoration: 'underline',
 
   '&:hover': {
     opacity: 0.9,
@@ -18,10 +19,10 @@ export const Link = styled('a', {
         color: '$white',
       },
       secondary: {
-        color: '$primary800',
+        color: '$primary700',
       },
       tertiary: {
-        color: '$primary700',
+        color: '$primary500',
       },
       accent: {
         color: '$accent',
