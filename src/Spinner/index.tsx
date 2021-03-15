@@ -1,4 +1,16 @@
+import React from 'react';
+import { StitchesVariants } from '@stitches/react';
+import type * as Polymorphic from '@radix-ui/react-polymorphic';
+import * as VisuallyHidden from '@radix-ui/react-visually-hidden';
+
 import { keyframes, styled } from '../lib/stitches';
+import { CSSProp } from '../lib/types';
+
+const DEFAULT_TAG = 'span';
+
+type SpinnerCSSProp = CSSProp<typeof StyledSpinner>;
+type SpinnerVariants = StitchesVariants<typeof StyledSpinner>;
+type SpinnerOwnProps = SpinnerCSSProp & SpinnerVariants;
 
 const rotate = keyframes({
   '0%': {
@@ -9,7 +21,7 @@ const rotate = keyframes({
   },
 });
 
-export const Spinner = styled('span', {
+const StyledSpinner = styled('span', {
   display: 'inline-block',
   position: 'relative',
   top: '$10',
@@ -88,3 +100,15 @@ export const Spinner = styled('span', {
     size: 'medium',
   },
 });
+
+type SpinnerComponent = Polymorphic.ForwardRefComponent<typeof DEFAULT_TAG, SpinnerOwnProps>;
+
+export const Spinner = React.forwardRef((props, forwardedRef) => {
+  return (
+    <StyledSpinner ref={forwardedRef} {...props}>
+      <VisuallyHidden.Root>
+        {props['aria-label'] ?? 'Loading, please wait.'}
+      </VisuallyHidden.Root>
+    </StyledSpinner>
+  );
+}) as SpinnerComponent;
