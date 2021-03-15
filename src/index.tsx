@@ -26,6 +26,7 @@ export { Label } from './Label';
 // ** Typography
 export { Text } from './Text';
 export { Heading } from './Heading';
+export { Link } from './Link';
 
 // ** Surfaces
 export { Card } from './Card';
