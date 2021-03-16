@@ -7,6 +7,7 @@ export const TextArea = styled('textarea', {
   borderRadius: '$sm',
   outlineColor: 'currentColor',
   resize: 'vertical',
+  overflowY: 'auto',
 
   '&:hover, &:focus, &:active': {
     boxShadow: 'inset 0 0 0 1px $colors$primary',
