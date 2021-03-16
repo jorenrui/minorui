@@ -90,7 +90,7 @@ const StyledButton = styled(DEFAULT_TAG, {
         color: '$primaryText',
       },
       accent: {
-        backgroundColor: '$accent700',
+        backgroundColor: '$accent',
         color: '$accentText',
       },
       info: {
