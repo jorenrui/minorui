@@ -48,21 +48,27 @@ const StyledContent = styled(RadixDialog.Content, {
     outline: 'none',
   },
 
+  when: {
+    downSm: {
+      width: '90vw',
+    },
+  },
+
   variants: {
     size: {
       auto: {
         maxWidth: 'max-content',
       },
       sm: {
-        maxWidth: '400px',
+        maxWidth: '420px',
         width: '80vw',
       },
       md: {
-        maxWidth: '500px',
+        maxWidth: '520px',
         width: '80vw',
       },
       lg: {
-        maxWidth: '700px',
+        maxWidth: '720px',
         width: '80vw',
       },
     },
