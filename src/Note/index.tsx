@@ -70,11 +70,11 @@ const StyledNote = styled(DEFAULT_TAG, {
       },
       medium: {
         padding: '$100',
-        fontType: '$base',
+        fontType: 'base',
       },
       large: {
         padding: '$150',
-        fontType: '$lg',
+        fontType: 'lg',
       },
     },
   },
