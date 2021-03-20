@@ -12,7 +12,7 @@ import { SurfacesDialog } from './SurfacesDialogs';
 const Grid = styled('div', {
   display: 'grid',
   gridTemplateColumns: '1fr 1fr 1fr',
-  gap: '$150',
+  fgap: '$150',
 });
 
 export function Surfaces() {

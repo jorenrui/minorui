@@ -12,7 +12,7 @@ const StyledRoot = styled('div', {
 const StyledContent = styled('div', {
   display: 'grid',
   gridTemplateColumns: '1fr auto',
-  gap: '$50',
+  fgap: '$50',
 
   when: {
     downSm: {

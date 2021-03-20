@@ -10,7 +10,7 @@ import {
 const Grid = styled('div', {
   display: 'grid',
   gridTemplateColumns: '1fr 1fr 1fr',
-  gap: '$100',
+  fgap: '$100',
 });
 
 export function Progress() {

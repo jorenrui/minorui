@@ -24,10 +24,12 @@ export function Inputs() {
       <Heading as="h3" size="4xl">
         Spinners
       </Heading>
-      <Spinner size="large" />
-      <Spinner size="medium" />
-      <Spinner size="small" />
-      <Spinner size="mini" />
+      <Box css={{ display: 'flex', fgap: '$100' }}>
+        <Spinner size="large" />
+        <Spinner size="medium" />
+        <Spinner size="small" />
+        <Spinner size="mini" />
+      </Box>
       <Heading as="h3" size="4xl">
         Buttons
       </Heading>

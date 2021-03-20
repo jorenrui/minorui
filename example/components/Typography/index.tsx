@@ -46,7 +46,7 @@ export function Typography() {
       <Heading as="h3" size="4xl">
         Links
       </Heading>
-      <Box display="flex" css={{ gap: '$100' }}>
+      <Box display="flex" css={{ fgap: '$100' }}>
         <Link text>
           Text Link
         </Link>
@@ -58,7 +58,7 @@ export function Typography() {
         </Link>
         <br />
       </Box>
-      <Box display="flex" css={{ gap: '$100' }}>
+      <Box display="flex" css={{ fgap: '$100' }}>
         <Link color="default">
           Default Link
         </Link>
