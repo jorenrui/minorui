@@ -28,11 +28,7 @@ export const StyledHeadlineSubTitle = React.forwardRef((props, forwardedRef) => 
       ref={forwardedRef}
       color={color}
       size={size}
-      css={{
-        margin: '$30 0',
-        textTransform: 'uppercase',
-        ...object(css)
-      }}
+      css={{ margin: '$30 0', ...object(css) }}
       {...restProps}
     >
       {children}
