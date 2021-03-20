@@ -28,7 +28,7 @@ export const StyledHeadlineTitle = React.forwardRef((props, forwardedRef) => {
       ref={forwardedRef}
       as={'h1' || as}
       size={size}
-      css={{ fontWeight: 600, marginBottom: 0, ...object(css) }}
+      css={{ fontWeight: 600, margin: 0, ...object(css) }}
       {...restProps}
     >
       {children}
