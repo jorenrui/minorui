@@ -14,6 +14,7 @@ const StyledContent = styled(RadixDropdownMenu.Content, {
   borderRadius: '$sm',
   padding: '$30',
   minWidth: '$800',
+  WebkitAppearance: 'none',
   boxShadow: '$lg',
 });
 

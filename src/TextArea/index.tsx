@@ -5,6 +5,7 @@ export const TextArea = styled('textarea', {
   width: '100%',
   border: 'none',
   borderRadius: '$sm',
+  WebkitAppearance: 'none',
   outlineColor: 'currentColor',
   resize: 'vertical',
   overflowY: 'auto',

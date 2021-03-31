@@ -21,6 +21,7 @@ const StyledButton = styled(DEFAULT_TAG, {
   position: 'relative',
   height: 'auto',
   border: 'none',
+  WebkitAppearance: 'none',
   backgroundColor: 'transparent',
   transition: `
     background-color 200ms ease 0ms,

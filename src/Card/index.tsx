@@ -6,6 +6,7 @@ const CARD_STYLES: CSS = {
   color: '$gray900',
   borderRadius: '$md',
   padding: '$150',
+  WebkitAppearance: 'none',
 
   '&:hover': {
     boxShadow: '$lg',
