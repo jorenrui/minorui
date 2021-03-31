@@ -13,6 +13,10 @@ const Grid = styled('div', {
   display: 'grid',
   gridTemplateColumns: '1fr 1fr 1fr',
   fgap: '$150',
+
+  '@downSm': {
+    gridTemplateColumns: '1fr',
+  },
 });
 
 export function Surfaces() {

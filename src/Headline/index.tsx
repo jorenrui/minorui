@@ -14,10 +14,8 @@ const StyledContent = styled('div', {
   gridTemplateColumns: '1fr auto',
   fgap: '$50',
 
-  when: {
-    downSm: {
-      gridTemplateColumns: '1fr',
-    },
+  '@downSm': {
+    gridTemplateColumns: '1fr',
   },
 });
 

@@ -1,13 +1,13 @@
 import { createCss, StitchesCss } from '@stitches/react';
 
 import { THEME } from './theme';
-import { CONDITIONS } from './conditions';
+import { MEDIA } from './media';
 import { UTILS } from './utils';
 
 const stitchesConfig = createCss({
   prefix: '',
   theme: THEME,
-  conditions: CONDITIONS,
+  media: MEDIA,
   utils: UTILS,
 });
 

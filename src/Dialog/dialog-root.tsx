@@ -48,10 +48,8 @@ const StyledContent = styled(RadixDialog.Content, {
     outline: 'none',
   },
 
-  when: {
-    downSm: {
-      width: '90vw',
-    },
+  '@downSm': {
+    width: '90vw',
   },
 
   variants: {
