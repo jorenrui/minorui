@@ -20,66 +20,66 @@ export const WHITESPACE = {
     lineHeight: `$${value}`,
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif',
   }),
-  m: () => (value: keyof ThemeSpace | (string & {})) => ({
+  m: () => (value: keyof ThemeSpace | number | (string & {})) => ({
     marginTop: value,
     marginBottom: value,
     marginLeft: value,
     marginRight: value,
   }),
-  mt: () => (value: keyof ThemeSpace | (string & {})) => ({
+  mt: () => (value: keyof ThemeSpace | number | (string & {})) => ({
     marginTop: value,
   }),
-  mr: () => (value: keyof ThemeSpace | (string & {})) => ({
+  mr: () => (value: keyof ThemeSpace | number | (string & {})) => ({
     marginRight: value,
   }),
-  mb: () => (value: keyof ThemeSpace | (string & {})) => ({
+  mb: () => (value: keyof ThemeSpace | number | (string & {})) => ({
     marginBottom: value,
   }),
-  ml: () => (value: keyof ThemeSpace | (string & {})) => ({
+  ml: () => (value: keyof ThemeSpace | number | (string & {})) => ({
     marginLeft: value,
   }),
-  mx: () => (value: keyof ThemeSpace | (string & {})) => ({
+  mx: () => (value: keyof ThemeSpace | number | (string & {})) => ({
     marginLeft: value,
     marginRight: value,
   }),
-  my: () => (value: keyof ThemeSpace | (string & {})) => ({
+  my: () => (value: keyof ThemeSpace | number | (string & {})) => ({
     marginTop: value,
     marginBottom: value,
   }),
-  p: () => (value: keyof ThemeSpace | (string & {})) => ({
+  p: () => (value: keyof ThemeSpace | number | (string & {})) => ({
     paddingTop: value,
     paddingBottom: value,
     paddingLeft: value,
     paddingRight: value,
   }),
-  pt: () => (value: keyof ThemeSpace | (string & {})) => ({
+  pt: () => (value: keyof ThemeSpace | number | (string & {})) => ({
     paddingTop: value,
   }),
-  pr: () => (value: keyof ThemeSpace | (string & {})) => ({
+  pr: () => (value: keyof ThemeSpace | number | (string & {})) => ({
     paddingRight: value,
   }),
-  pb: () => (value: keyof ThemeSpace | (string & {})) => ({
+  pb: () => (value: keyof ThemeSpace | number | (string & {})) => ({
     paddingBottom: value,
   }),
-  pl: () => (value: keyof ThemeSpace | (string & {})) => ({
+  pl: () => (value: keyof ThemeSpace | number | (string & {})) => ({
     paddingLeft: value,
   }),
-  px: () => (value: keyof ThemeSpace | (string & {})) => ({
+  px: () => (value: keyof ThemeSpace | number | (string & {})) => ({
     paddingLeft: value,
     paddingRight: value,
   }),
-  py: () => (value: keyof ThemeSpace | (string & {})) => ({
+  py: () => (value: keyof ThemeSpace | number | (string & {})) => ({
     paddingTop: value,
     paddingBottom: value,
   }),
-  size: () => (value: keyof ThemeSize | (string & {})) => ({
+  size: () => (value: keyof ThemeSize | number | (string & {})) => ({
     width: value,
     height: value,
   }),
   linearGradient: () => (value: (string & {})) => ({
     backgroundImage: `linear-gradient(${value})`,
   }),
-  br: () => (value: keyof ThemeRadii | (string | {})) => ({
+  br: () => (value: keyof ThemeRadii | number | (string & {})) => ({
     borderRadius: value,
   }),
 };
