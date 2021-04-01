@@ -28,30 +28,32 @@ const StyledButton = styled(DEFAULT_TAG, {
     box-shadow 200ms ease 0ms,
     color 200ms ease 0ms
   `,
+  $$shadowColor: '$colors$primary',
 
   '&:hover': {
     opacity: 0.95,
   },
   '&:disabled': {
     opacity: 0.8,
+    $$shadowColor: '#ccc',
   },
 
   variants: {
     size: {
       xs: {
-        fontSize: '$xs',
+        fontType: 'xs',
         padding: '$30 $40',
       },
       sm: {
-        fontSize: '$sm',
+        fontType: 'sm',
         padding: '$50 $60',
       },
       md: {
-        fontSize: '$base',
+        fontType: 'base',
         padding: '$80 $100',
       },
       lg: {
-        fontSize: '$xl',
+        fontType: 'xl',
         padding: '$100 $200',
       },
     },
@@ -118,7 +120,6 @@ const StyledButton = styled(DEFAULT_TAG, {
         color: 'white',
       },
       secondary: {
-        $$shadowColor: '$colors$primary',
         backgroundColor: 'transparent',
         boxShadow: '0 0 0 1px $$shadowColor',
 
