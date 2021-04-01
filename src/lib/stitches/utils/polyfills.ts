@@ -6,7 +6,7 @@ type ThemeSpace = {
 
 export const POLYFILLS = {
   // * Flex Gap Polyfill
-  fgap: () => (value: keyof ThemeSpace | (string & {})) => {
+  fgap: () => (value: keyof ThemeSpace | number | (string & {})) => {
     const ua = typeof navigator !== 'undefined'
       ? navigator.userAgent.toLowerCase()
       : '';
