@@ -38,6 +38,7 @@ export { Headline } from './Headline';
 
 // ** Progress
 export { Skeleton } from './Skeleton';
+export { Progress } from './Progress';
 
 // ** Feedback
 export { Note } from './Note';
