@@ -49,6 +49,9 @@ export { DropdownMenu } from './DropdownMenu';
 // ** Icons
 export { X } from './lib/icons/X';
 
+// ** Others
+export { Separator } from './Separator';
+
 // ** Utilities
 export * as AccessibleIcon from '@radix-ui/react-accessible-icon';
 export * as VisuallyHidden from '@radix-ui/react-visually-hidden';
