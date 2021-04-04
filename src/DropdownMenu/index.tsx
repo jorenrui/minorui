@@ -7,6 +7,13 @@ const StyledTrigger = styled(RadixDropdownMenu.Trigger, {
   border: 'none',
   backgroundColor: 'transparent',
   borderRadius: '$sm',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+
+  '&:hover, &:focus': {
+    backgroundColor: 'transparent',
+  },
 });
 
 const StyledContent = styled(RadixDropdownMenu.Content, {
