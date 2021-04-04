@@ -55,3 +55,4 @@ export { Separator } from './Separator';
 // ** Utilities
 export * as AccessibleIcon from '@radix-ui/react-accessible-icon';
 export * as VisuallyHidden from '@radix-ui/react-visually-hidden';
+export { IdProvider } from '@radix-ui/react-id';

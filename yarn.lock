@@ -88,6 +88,13 @@
     "@radix-ui/react-utils" "0.0.5"
     "@radix-ui/utils" "0.0.3"
 
+"@radix-ui/react-id@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-id/-/react-id-0.0.5.tgz#db2336f74e6b1b1cf48195c7d71a89eb80eb0dd9"
+  integrity sha512-ho3Nti6qdlG6y6Ac+MzbaRfd1f601FpxOHfobT27mDClvlpX/c/TEK6bmSWRd0ZNdqEhbwC5s+JirutO06uBVw==
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+
 "@radix-ui/react-label@^0.0.5":
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-label/-/react-label-0.0.5.tgz#68d05c31ed5669190e09967026b8660a2f4cf736"
