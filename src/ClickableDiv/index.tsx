@@ -24,10 +24,7 @@ const StyledClickableDiv = styled(DEFAULT_TAG, {
         outline: 'none',
         padding: '$50',
 
-        '&:focus': {
-          backgroundColor: '$primary100',
-        },
-        '&:hover': {
+        '&:focus, &:hover': {
           backgroundColor: '$primary100',
         },
       },
