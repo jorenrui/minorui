@@ -23,7 +23,7 @@ const StyledButton = styled('button', {
   background: 'transparent',
   border: 'none',
   padding: '$100 $300',
-  fontType: 'xs',
+  fontType: '$xs',
 
   '&:hover, &focus': {
     backgroundColor: '$primary100',

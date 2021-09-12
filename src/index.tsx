@@ -1,12 +1,13 @@
 // * Stitches Config
-export { StitchesVariants } from '@stitches/react';
+import type * as Stitches from '@stitches/react';
+export type VariantProps<T> = Stitches.VariantProps<T>;
 export {
   styled,
   css,
-  global,
+  globalCss,
   theme,
   keyframes,
-  getCssString,
+  getCssText,
   CSS,
   Theme,
 } from './lib/stitches';

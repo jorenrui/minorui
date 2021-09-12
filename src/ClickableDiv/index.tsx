@@ -1,5 +1,5 @@
 import React from 'react';
-import { StitchesVariants } from '@stitches/react';
+import type * as Stitches from '@stitches/react';
 import type * as Polymorphic from '@radix-ui/react-polymorphic';
 
 import { styled } from '../lib/stitches';
@@ -9,7 +9,7 @@ import { CSSProp } from '../lib/types';
 const DEFAULT_TAG = 'div';
 
 type ClickableDivCSSProp = CSSProp<typeof StyledClickableDiv>;
-type ClickableDivVariants = StitchesVariants<typeof StyledClickableDiv>;
+type ClickableDivVariants = Stitches.VariantProps<typeof StyledClickableDiv>;
 type ClickableDivOwnProps = ClickableDivCSSProp & ClickableDivVariants & {
   children: React.ReactNode;
   onClick: (event: React.MouseEvent<HTMLDivElement> | React.KeyboardEvent<HTMLDivElement>) => void;

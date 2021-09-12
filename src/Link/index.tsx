@@ -42,43 +42,43 @@ export const Link = styled('a', {
     },
     size: {
       xs: {
-        fontType: 'xs',
+        fontType: '$xs',
       },
       sm: {
-        fontType: 'sm',
+        fontType: '$sm',
       },
       base: {
-        fontType: 'base',
+        fontType: '$base',
       },
       lg: {
-        fontType: 'lg',
+        fontType: '$lg',
       },
       xl: {
-        fontType: 'xl',
+        fontType: '$xl',
       },
       '2xl': {
-        fontType: '2xl',
+        fontType: '$2xl',
       },
       '3xl': {
-        fontType: '3xl',
+        fontType: '$3xl',
       },
       '4xl': {
-        fontType: '4xl',
+        fontType: '$4xl',
       },
       '5xl': {
-        fontType: '5xl',
+        fontType: '$5xl',
       },
       '6xl': {
-        fontType: '6xl',
+        fontType: '$6xl',
       },
       '7xl': {
-        fontType: '7xl',
+        fontType: '$7xl',
       },
       '8xl': {
-        fontType: '8xl',
+        fontType: '$8xl',
       },
       '9xl': {
-        fontType: '9xl',
+        fontType: '$9xl',
       },
     },
     text: {
