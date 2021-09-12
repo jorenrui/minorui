@@ -1,5 +1,5 @@
 import React from 'react';
-import { StitchesVariants } from '@stitches/core';
+import type * as Stitches from '@stitches/react';
 import type * as Polymorphic from '@radix-ui/react-polymorphic';
 import * as VisuallyHidden from '@radix-ui/react-visually-hidden';
 
@@ -10,7 +10,7 @@ import { Spinner } from '../Spinner';
 const DEFAULT_TAG = 'button';
 
 type ButtonCSSProp = CSSProp<typeof StyledButton>;
-type ButtonVariants = StitchesVariants<typeof StyledButton>;
+type ButtonVariants = Stitches.VariantProps<typeof StyledButton>;
 type ButtonOwnProps = ButtonCSSProp & ButtonVariants & {
   loading?: boolean;
   loadingText?: string;
@@ -41,19 +41,19 @@ const StyledButton = styled(DEFAULT_TAG, {
   variants: {
     size: {
       xs: {
-        fontType: 'xs',
+        fontType: '$xs',
         padding: '$30 $40',
       },
       sm: {
-        fontType: 'sm',
+        fontType: '$sm',
         padding: '$50 $60',
       },
       md: {
-        fontType: 'base',
+        fontType: '$base',
         padding: '$80 $100',
       },
       lg: {
-        fontType: 'xl',
+        fontType: '$xl',
         padding: '$100 $200',
       },
     },

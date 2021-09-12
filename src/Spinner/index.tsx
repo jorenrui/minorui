@@ -1,5 +1,5 @@
 import React from 'react';
-import { StitchesVariants } from '@stitches/react';
+import type * as Stitches from '@stitches/react';
 import type * as Polymorphic from '@radix-ui/react-polymorphic';
 import * as VisuallyHidden from '@radix-ui/react-visually-hidden';
 
@@ -9,7 +9,7 @@ import { CSSProp } from '../lib/types';
 const DEFAULT_TAG = 'span';
 
 type SpinnerCSSProp = CSSProp<typeof StyledSpinner>;
-type SpinnerVariants = StitchesVariants<typeof StyledSpinner>;
+type SpinnerVariants = Stitches.VariantProps<typeof StyledSpinner>;
 type SpinnerOwnProps = SpinnerCSSProp & SpinnerVariants;
 
 const rotate = keyframes({

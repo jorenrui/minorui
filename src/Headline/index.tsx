@@ -1,8 +1,13 @@
 import { styled } from '../lib/stitches';
+import { Button } from '../Button';
 import { StyledHeadlineTitle } from './headline-title';
 import { StyledHeadlineSubTitle } from './headline-subtitle';
 import { StyledHeadlineDescription } from './headline-description';
-import { StyledHeadlineButton } from './headline-button';
+
+export const StyledHeadlineButton = styled(Button, {
+  size: 'sm',
+  color: 'primary',
+});
 
 const StyledRoot = styled('div', {
   width: '100%',

@@ -1,85 +1,62 @@
-import { THEME } from '../theme';
-import { SPACE } from '../theme/space';
-import { RADII } from '../theme/radii';
-
-type ThemeSpace = {
-  [K in keyof typeof SPACE as `$${K}`]: any
-}
-
-type ThemeSize = {
-  [K in keyof typeof SPACE as `$${K}`]: any
-}
-
-type ThemeRadii = {
-  [K in keyof typeof RADII as `$${K}`]: any
-}
+import type * as Stitches from '@stitches/react';
 
 export const WHITESPACE = {
-  fontType: () => (value: keyof typeof THEME['fontSizes']) => ({
-    fontSize: `$${value}`,
-    lineHeight: `$${value}`,
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif',
-  }),
-  m: () => (value: keyof ThemeSpace | number | (string & {})) => ({
+  m: (value: Stitches.ScaleValue<'space'>) => ({
     marginTop: value,
     marginBottom: value,
     marginLeft: value,
     marginRight: value,
   }),
-  mt: () => (value: keyof ThemeSpace | number | (string & {})) => ({
+  mt: (value: Stitches.ScaleValue<'space'>) => ({
     marginTop: value,
   }),
-  mr: () => (value: keyof ThemeSpace | number | (string & {})) => ({
+  mr: (value: Stitches.ScaleValue<'space'>) => ({
     marginRight: value,
   }),
-  mb: () => (value: keyof ThemeSpace | number | (string & {})) => ({
+  mb: (value: Stitches.ScaleValue<'space'>) => ({
     marginBottom: value,
   }),
-  ml: () => (value: keyof ThemeSpace | number | (string & {})) => ({
+  ml: (value: Stitches.ScaleValue<'space'>) => ({
     marginLeft: value,
   }),
-  mx: () => (value: keyof ThemeSpace | number | (string & {})) => ({
+  mx: (value: Stitches.ScaleValue<'space'>) => ({
     marginLeft: value,
     marginRight: value,
   }),
-  my: () => (value: keyof ThemeSpace | number | (string & {})) => ({
+  my: (value: Stitches.ScaleValue<'space'>) => ({
     marginTop: value,
     marginBottom: value,
   }),
-  p: () => (value: keyof ThemeSpace | number | (string & {})) => ({
+  p: (value: Stitches.ScaleValue<'space'>) => ({
     paddingTop: value,
     paddingBottom: value,
     paddingLeft: value,
     paddingRight: value,
   }),
-  pt: () => (value: keyof ThemeSpace | number | (string & {})) => ({
+  pt: (value: Stitches.ScaleValue<'space'>) => ({
     paddingTop: value,
   }),
-  pr: () => (value: keyof ThemeSpace | number | (string & {})) => ({
+  pr: (value: Stitches.ScaleValue<'space'>) => ({
     paddingRight: value,
   }),
-  pb: () => (value: keyof ThemeSpace | number | (string & {})) => ({
+  pb: (value: Stitches.ScaleValue<'space'>) => ({
     paddingBottom: value,
   }),
-  pl: () => (value: keyof ThemeSpace | number | (string & {})) => ({
+  pl: (value: Stitches.ScaleValue<'space'>) => ({
     paddingLeft: value,
   }),
-  px: () => (value: keyof ThemeSpace | number | (string & {})) => ({
+  px: (value: Stitches.ScaleValue<'space'>) => ({
     paddingLeft: value,
     paddingRight: value,
   }),
-  py: () => (value: keyof ThemeSpace | number | (string & {})) => ({
+  py: (value: Stitches.ScaleValue<'space'>) => ({
     paddingTop: value,
     paddingBottom: value,
   }),
-  size: () => (value: keyof ThemeSize | number | (string & {})) => ({
-    width: value,
-    height: value,
-  }),
-  linearGradient: () => (value: (string & {})) => ({
+  linearGradient: (value: (string & {})) => ({
     backgroundImage: `linear-gradient(${value})`,
   }),
-  br: () => (value: keyof ThemeRadii | number | (string & {})) => ({
+  br: (value: Stitches.ScaleValue<'radii'>) => ({
     borderRadius: value,
   }),
 };

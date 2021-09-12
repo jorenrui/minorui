@@ -37,19 +37,19 @@ export const Input = styled('input', {
     size: {
       xs: {
         padding: '$30 $40',
-        fontType: 'xs',
+        fontType: '$xs',
       },
       sm: {
         padding: '$40 $50',
-        fontType: 'sm',
+        fontType: '$sm',
       },
       md: {
         padding: '$40 $50',
-        fontType: 'base',
+        fontType: '$base',
       },
       lg: {
         padding: '$50 $60',
-        fontType: 'base',
+        fontType: '$base',
       }
     }
   },

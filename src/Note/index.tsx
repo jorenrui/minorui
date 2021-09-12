@@ -1,5 +1,5 @@
 import React from 'react';
-import { StitchesVariants } from '@stitches/react';
+import type * as Stitches from '@stitches/react';
 import type * as Polymorphic from '@radix-ui/react-polymorphic';
 
 import { capitalize } from '../lib/helpers/capitalize';
@@ -9,7 +9,7 @@ import { CSSProp } from '../lib/types';
 const DEFAULT_TAG = 'div';
 
 type NoteCSSProp = CSSProp<typeof StyledNote>;
-type NoteVariants = StitchesVariants<typeof StyledNote>;
+type NoteVariants = Stitches.VariantProps<typeof StyledNote>;
 type NoteOwnProps = NoteCSSProp & NoteVariants & {
   label?: string | boolean;
   children: React.ReactNode;
@@ -66,15 +66,15 @@ const StyledNote = styled(DEFAULT_TAG, {
     size: {
       small: {
         padding: '$50',
-        fontType: 'sm',
+        fontType: '$sm',
       },
       medium: {
         padding: '$100',
-        fontType: 'base',
+        fontType: '$base',
       },
       large: {
         padding: '$150',
-        fontType: 'lg',
+        fontType: '$lg',
       },
     },
   },

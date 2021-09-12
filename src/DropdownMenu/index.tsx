@@ -3,7 +3,7 @@ import { styled } from '../lib/stitches';
 
 const StyledRoot= styled(RadixDropdownMenu.Root, {});
 const StyledTrigger = styled(RadixDropdownMenu.Trigger, {
-  fontType: 'base',
+  fontType: '$base',
   border: 'none',
   backgroundColor: 'transparent',
   borderRadius: '$sm',
@@ -27,7 +27,7 @@ const StyledContent = styled(RadixDropdownMenu.Content, {
 
 const StyledItem = styled(RadixDropdownMenu.Item, {
   padding: '$30 $50',
-  fontType: 'sm',
+  fontType: '$sm',
   borderRadius: '$xs',
   cursor: 'default',
   color: '$primary',

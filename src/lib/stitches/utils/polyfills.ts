@@ -1,12 +1,8 @@
-import { SPACE } from '../theme/space';
-
-type ThemeSpace = {
-  [K in keyof typeof SPACE as `$${K}`]: any
-}
+import type * as Stitches from '@stitches/react';
 
 export const POLYFILLS = {
   // * Flex Gap Polyfill
-  fgap: () => (value: keyof ThemeSpace | number | (string & {})) => {
+  fgap: (value: Stitches.ScaleValue<'space'>) => {
     const ua = typeof navigator !== 'undefined'
       ? navigator.userAgent.toLowerCase()
       : '';

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StitchesVariants } from '@stitches/react';
+import type * as Stitches from '@stitches/react';
 import * as RadixDialog from '@radix-ui/react-dialog';
 import type * as Polymorphic from '@radix-ui/react-polymorphic';
 import * as AccessibleIcon from '@radix-ui/react-accessible-icon';
@@ -11,7 +11,7 @@ import { CSSProp } from '../lib/types';
 const DEFAULT_ROOT_TAG = 'div';
 
 type DialogContentCSSProp = CSSProp<typeof StyledContent>;
-type DialogContentVariants = StitchesVariants<typeof StyledContent>;
+type DialogContentVariants = Stitches.VariantProps<typeof StyledContent>;
 type DialogRootOwnProps = DialogContentCSSProp
   & DialogContentVariants
   & React.ComponentProps<typeof StyledContent>
@@ -77,7 +77,7 @@ const StyledContent = styled(RadixDialog.Content, {
 });
 
 const StyledClose = styled(RadixDialog.Close, {
-  fontType: 'base',
+  fontType: '$base',
   border: 'none',
   backgroundColor: 'transparent',
   borderRadius: '$full',

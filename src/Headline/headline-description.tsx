@@ -1,5 +1,5 @@
 import React from 'react';
-import { StitchesVariants } from '@stitches/react';
+import type * as Stitches from '@stitches/react';
 import type * as Polymorphic from '@radix-ui/react-polymorphic';
 
 import { Text } from '../Text';
@@ -9,7 +9,7 @@ import { object } from '../lib/helpers/object';
 const DEFAULT_TAG = 'p';
 
 type TextCSSProp = CSSProp<typeof Text>;
-type TextVariants = StitchesVariants<typeof Text>;
+type TextVariants = Stitches.VariantProps<typeof Text>;
 type TextOwnProps = TextCSSProp & TextVariants;
 
 type HeadlineDescriptionComponent = Polymorphic.ForwardRefComponent<

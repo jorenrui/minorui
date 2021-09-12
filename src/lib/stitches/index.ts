@@ -1,10 +1,11 @@
-import { createCss, StitchesCss } from '@stitches/react';
+import { createStitches } from '@stitches/react';
+import type * as Stitches from '@stitches/react';
 
 import { THEME } from './theme';
 import { MEDIA } from './media';
 import { UTILS } from './utils';
 
-const stitchesConfig = createCss({
+const stitchesConfig = createStitches({
   prefix: '',
   theme: THEME,
   media: MEDIA,
@@ -15,10 +16,10 @@ export const Theme = THEME;
 export const {
   styled,
   css,
-  global,
+  globalCss,
   theme,
   keyframes,
-  getCssString,
+  getCssText,
 } = stitchesConfig;
 
-export type CSS = StitchesCss<typeof stitchesConfig>;
+export type CSS = Stitches.CSS<typeof stitchesConfig>;
