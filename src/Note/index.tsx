@@ -31,12 +31,12 @@ const StyledNote = styled(DEFAULT_TAG, {
         color: '$primary',
       },
       secondary: {
-        borderColor: '$primary800',
-        color: '$primary800',
+        borderColor: '$primary600',
+        color: '$primary600',
       },
       tertiary: {
-        borderColor: '$primary700',
-        color: '$primary700',
+        borderColor: '$primary400',
+        color: '$primary400',
       },
       accent: {
         borderColor: '$accent',
