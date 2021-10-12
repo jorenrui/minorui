@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import type * as Stitches from '@stitches/react';
 import * as RadixDialog from '@radix-ui/react-dialog';
 import type * as Polymorphic from '@radix-ui/react-polymorphic';
 import * as AccessibleIcon from '@radix-ui/react-accessible-icon';
+import { PointerDownOutsideEvent } from '@radix-ui/react-dismissable-layer/dist/index';
 
 import { X } from '../lib/icons/X';
 import { styled } from '../lib/stitches';
@@ -18,7 +19,8 @@ type DialogRootOwnProps = DialogContentCSSProp
   & {
   id?: string;
   open: boolean;
-  onClose: (event: MouseEvent | TouchEvent) => void;
+  onClose: (event: PointerDownOutsideEvent) => void;
+  onPointerDownOutside?: ((event: PointerDownOutsideEvent) => void) | undefined;
   children: React.ReactNode;
 }
 
@@ -108,18 +110,16 @@ export const DialogRoot = React.forwardRef((props, forwardedRef) => {
     onPointerDownOutside,
     ...restProps
   } = props;
-  const [dialogId] = useState(() => (id ? `dialog-${id.replace(/\s+/g, '-')}` : undefined));
-
   const handleCloseClick = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-    onClose(event as unknown as MouseEvent);
+    onClose(event as unknown as PointerDownOutsideEvent);
   }
 
   return (
-    <StyledRoot id={dialogId} open={open}>
+    <StyledRoot open={open}>
       <StyledOverlay />
       <StyledContent
         ref={forwardedRef}
-        onPointerDownOutside={onPointerDownOutside ?? onClose}
+        onInteractOutside={onPointerDownOutside ?? onClose}
         {...restProps}
       >
         <StyledIconContainer>
