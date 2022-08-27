@@ -1,9 +1,13 @@
-# Minorui (A work in progress)
+# Minorui [DISCONTINUED]
 
 [![0.2.0 NPM Version](https://img.shields.io/badge/npm-v0.2.0-orange)](http://npmjs.com/package/minorui)
 [![MIT License Status](https://img.shields.io/badge/license-MIT-blue)](https://github.com/jorenrui/minorui/blob/main/LICENSE)
 
-A React UI component library with a minimal design. The official design system for [Sutle](https://sutle.io).
+> ANNOUCEMENT!
+>
+> Starting from Sutle v0.2.0, TailwindCSS will be used in replacement for Minorui. Due to this, we no longer maintain this UI component library.
+
+A React UI component library with a minimal design. The official design system for [Sutle v0.1.0](https://sutle.io).
 
 ## Installation
 
