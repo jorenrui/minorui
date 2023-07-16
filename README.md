@@ -5,7 +5,7 @@
 
 > ANNOUCEMENT!
 >
-> Starting from Sutle v0.2.0, TailwindCSS will be used in replacement for Minorui. Due to this, we no longer maintain this UI component library.
+> Starting from Sutle v0.2.0, [Suikun UI](https://suikunui.joeylene.com/) will be used in replacement for Minorui. Due to this, we no longer maintain this UI component library.
 
 A React UI component library with a minimal design. The official design system for [Sutle v0.1.0](https://sutle.io).
 
